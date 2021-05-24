@@ -13,4 +13,11 @@ class TextStyles {
       fontSize: getSize(c) * 60,
     );
   }
+
+  TextStyle getSubtitle(BuildContext c) {
+    return TextStyle(
+      color: Colors.white,
+      fontSize: getSize(c) * 30,
+    );
+  }
 }

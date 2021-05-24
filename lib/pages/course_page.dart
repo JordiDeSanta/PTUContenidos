@@ -24,14 +24,14 @@ class CoursePage extends StatelessWidget {
         children: [
           TableRow(
             children: [
-              _createButton(),
-              _createButton(),
+              _createButton(context),
+              _createButton(context),
             ],
           ),
           TableRow(
             children: [
-              _createButton(),
-              _createButton(),
+              _createButton(context),
+              _createButton(context),
             ],
           )
         ],
@@ -40,13 +40,17 @@ class CoursePage extends StatelessWidget {
   }
 }
 
-Widget _createButton() {
+Widget _createButton(BuildContext c) {
+  final styles = TextStyles();
+
   return Container(
     padding: EdgeInsets.all(10),
     height: 350,
     child: ElevatedButton(
       onPressed: () {},
       style: ButtonStyle(
+        padding: MaterialStateProperty.all(EdgeInsets.zero),
+        backgroundColor: MaterialStateProperty.all(Colors.greenAccent),
         elevation: MaterialStateProperty.all(0.0),
         shape: MaterialStateProperty.all(
           RoundedRectangleBorder(
@@ -54,7 +58,26 @@ Widget _createButton() {
           ),
         ),
       ),
-      child: null,
+      child: Column(
+        children: [
+          Container(
+            padding: EdgeInsets.all(10),
+            child: Text(
+              'Organización, estructura y actividad celular',
+              style: styles.getSubtitle(c),
+            ),
+          ),
+          Expanded(
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(20),
+              child: Image(
+                image: AssetImage('assets/img/bio1.jpeg'),
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
+        ],
+      ),
     ),
   );
 }
