@@ -30,6 +30,7 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       routes: {
         'home': (BuildContext context) => HomePage(),
+        'course': (BuildContext context) => HomePage(),
         'pdf': (BuildContext context) => PDFPage(),
       },
       theme: ThemeData(
