@@ -32,7 +32,10 @@ class _MyAppState extends State<MyApp> {
         'home': (BuildContext context) => HomePage(),
         'pdf': (BuildContext context) => PDFPage(),
       },
-      theme: ThemeData(accentColor: Colors.white),
+      theme: ThemeData(
+        accentColor: Colors.white,
+        fontFamily: 'Louis',
+      ),
     );
   }
 }
