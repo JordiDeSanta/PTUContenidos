@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_cache_manager/flutter_cache_manager.dart';
 import 'package:pdf_render/pdf_render_widgets.dart';
+import 'package:ptucontenidos/pages/course_page.dart';
 import 'package:ptucontenidos/pages/home_page.dart';
 import 'package:ptucontenidos/pages/pdf_page.dart';
 
@@ -30,7 +31,7 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       routes: {
         'home': (BuildContext context) => HomePage(),
-        'course': (BuildContext context) => HomePage(),
+        'course': (BuildContext context) => CoursePage(),
         'pdf': (BuildContext context) => PDFPage(),
       },
       theme: ThemeData(

@@ -19,7 +19,6 @@ class HomePage extends StatelessWidget {
         centerTitle: true,
         toolbarHeight: size * 140,
         backgroundColor: Colors.black38,
-        shape: RoundedRectangleBorder(),
       ),
       body: ListView(
         children: [
