@@ -83,7 +83,7 @@ Widget biology() {
             ContentArguments(
               title: 'Organelos de las Células',
               img: AssetImage('assets/icons/biology/celula.png'),
-              pdfRoute: 'assets/pdf/Biology/pauta.pdf',
+              pdfRoute: 'assets/pdf/Biology/celulas.pdf',
             ),
             ContentArguments(
               title: 'Transportes en la Membrana',
