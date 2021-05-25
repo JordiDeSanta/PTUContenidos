@@ -41,10 +41,12 @@ class CoursePage extends StatelessWidget {
                 settings: settings.themes[2],
                 color: settings.buttonsColor,
               ),
-              ThemeButton(
-                settings: settings.themes[3],
-                color: settings.buttonsColor,
-              ),
+              settings.themes.length == 4
+                  ? ThemeButton(
+                      settings: settings.themes[3],
+                      color: settings.buttonsColor,
+                    )
+                  : Container(),
             ],
           )
         ],

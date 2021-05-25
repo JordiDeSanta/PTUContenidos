@@ -68,6 +68,24 @@ Widget physics() {
       buttonsColor: Colors.purple,
       courseColor: Colors.purple,
       title: "Física",
+      themes: <ThemeArguments>[
+        ThemeArguments(
+          title: 'Ondas',
+          img: AssetImage('assets/img/phy1.jpg'),
+        ),
+        ThemeArguments(
+          title: 'Mecánica',
+          img: AssetImage('assets/img/phy2.jpg'),
+        ),
+        ThemeArguments(
+          title: 'Energía',
+          img: AssetImage('assets/img/phy3.jpg'),
+        ),
+        ThemeArguments(
+          title: 'Electricidad y Magnetismo',
+          img: AssetImage('assets/img/phy4.jpg'),
+        ),
+      ],
     ),
   );
 }
@@ -79,6 +97,20 @@ Widget chemistry() {
       buttonsColor: Colors.lightGreen,
       courseColor: Colors.lightGreen,
       title: "Química",
+      themes: <ThemeArguments>[
+        ThemeArguments(
+          title: 'Estructura Atómica',
+          img: AssetImage('assets/img/chem1.jpg'),
+        ),
+        ThemeArguments(
+          title: 'Química Orgánica',
+          img: AssetImage('assets/img/chem2.jpg'),
+        ),
+        ThemeArguments(
+          title: 'Reacciones químicas y Estequiometría',
+          img: AssetImage('assets/img/chem3.jpg'),
+        ),
+      ],
     ),
   );
 }
