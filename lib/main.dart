@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:ptucontenidos/pages/course_page.dart';
 import 'package:ptucontenidos/pages/home_page.dart';
 import 'package:ptucontenidos/pages/pdf_page.dart';
+import 'package:ptucontenidos/pages/theme_page.dart';
 import 'package:ptucontenidos/providers/ad_state.dart';
 import 'package:provider/provider.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
@@ -42,7 +43,8 @@ class _MyAppState extends State<MyApp> {
       routes: {
         'home': (BuildContext context) => HomePage(),
         'course': (BuildContext context) => CoursePage(),
-        'pdf': (BuildContext context) => PDFPage(),
+        'theme': (BuildContext context) => ThemePage(),
+        'content': (BuildContext context) => PDFPage(),
       },
       theme: ThemeData(
         accentColor: Colors.white,

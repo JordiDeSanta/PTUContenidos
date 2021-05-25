@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:ptucontenidos/providers/arguments.dart';
 import 'package:ptucontenidos/utils/texts.dart';
 
-class ThemeButton extends StatelessWidget {
-  final ThemeArguments settings;
+class ContentButton extends StatelessWidget {
+  final ContentArguments settings;
   final Color color;
 
-  ThemeButton({this.settings, this.color});
+  ContentButton({this.settings, this.color});
 
   final styles = TextStyles();
 
@@ -16,10 +16,10 @@ class ThemeButton extends StatelessWidget {
 
     return Container(
       padding: EdgeInsets.all(5),
-      height: size * 600,
+      height: size * 180,
       child: ElevatedButton(
         onPressed: () {
-          Navigator.pushNamed(context, 'theme', arguments: [settings, color]);
+          Navigator.pushNamed(context, 'content', arguments: [settings, color]);
         },
         style: ButtonStyle(
           padding: MaterialStateProperty.all(EdgeInsets.zero),
@@ -31,9 +31,10 @@ class ThemeButton extends StatelessWidget {
             ),
           ),
         ),
-        child: Column(
+        child: Row(
           children: [
             Container(
+              width: size * 450,
               padding: EdgeInsets.all(10),
               child: Text(
                 settings.title,

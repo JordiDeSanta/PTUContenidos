@@ -79,10 +79,34 @@ Widget biology() {
         ThemeArguments(
           title: 'Organización, Estructura y Actividad Celular',
           img: AssetImage('assets/img/bio1.jpeg'),
+          contents: <ContentArguments>[
+            ContentArguments(
+              title: 'Organelos de las Células',
+              img: AssetImage('assets/icons/biology/celula.png'),
+              pdfRoute: 'assets/pdf/Biology/pauta.pdf',
+            ),
+            ContentArguments(
+              title: 'Transportes en la Membrana',
+              img: AssetImage('assets/icons/biology/membrane.png'),
+              pdfRoute: 'assets/pdf/Biology/pauta.pdf',
+            ),
+          ],
         ),
         ThemeArguments(
           title: 'Procesos y Funciones Biológicas',
           img: AssetImage('assets/img/bio2.jpg'),
+          contents: <ContentArguments>[
+            ContentArguments(
+              title: 'Sexualidad y Pubertad',
+              img: AssetImage('assets/icons/biology/sexuality.png'),
+              pdfRoute: 'assets/pdf/Biology/pauta.pdf',
+            ),
+            ContentArguments(
+              title: 'Ciclo Ovárico',
+              img: AssetImage('assets/icons/biology/uterus.png'),
+              pdfRoute: 'assets/pdf/Biology/pauta.pdf',
+            ),
+          ],
         ),
         ThemeArguments(
           title: 'Herencia y Evolución',
