@@ -102,8 +102,33 @@ Widget biology() {
               pdfRoute: 'assets/pdf/Biology/pauta.pdf',
             ),
             ContentArguments(
-              title: 'Ciclo Ovárico',
-              img: AssetImage('assets/icons/biology/uterus.png'),
+              title: 'Embarazo y Lactancia',
+              img: AssetImage('assets/icons/biology/mother.png'),
+              pdfRoute: 'assets/pdf/Biology/pauta.pdf',
+            ),
+            ContentArguments(
+              title: 'Control de Natalidad',
+              img: AssetImage('assets/icons/biology/baby.png'),
+              pdfRoute: 'assets/pdf/Biology/pauta.pdf',
+            ),
+            ContentArguments(
+              title: 'ITS',
+              img: AssetImage('assets/icons/biology/its.png'),
+              pdfRoute: 'assets/pdf/Biology/pauta.pdf',
+            ),
+            ContentArguments(
+              title: 'Nutrientes y Biomoléculas',
+              img: AssetImage('assets/icons/biology/protein.png'),
+              pdfRoute: 'assets/pdf/Biology/pauta.pdf',
+            ),
+            ContentArguments(
+              title: 'Hormonas',
+              img: AssetImage('assets/icons/biology/hormone.png'),
+              pdfRoute: 'assets/pdf/Biology/pauta.pdf',
+            ),
+            ContentArguments(
+              title: 'Glicemia y Páncreas',
+              img: AssetImage('assets/icons/biology/sugar.png'),
               pdfRoute: 'assets/pdf/Biology/pauta.pdf',
             ),
           ],
@@ -111,6 +136,43 @@ Widget biology() {
         ThemeArguments(
           title: 'Herencia y Evolución',
           img: AssetImage('assets/img/bio3.jpg'),
+          contents: <ContentArguments>[
+            ContentArguments(
+              title: 'Ciclo Celular',
+              img: AssetImage('assets/icons/biology/cycle.png'),
+              pdfRoute: 'assets/pdf/Biology/pauta.pdf',
+            ),
+            ContentArguments(
+              title: 'Mitosis',
+              img: AssetImage('assets/icons/biology/mitosis.png'),
+              pdfRoute: 'assets/pdf/Biology/pauta.pdf',
+            ),
+            ContentArguments(
+              title: 'Meosis',
+              img: AssetImage('assets/icons/biology/esperm.png'),
+              pdfRoute: 'assets/pdf/Biology/pauta.pdf',
+            ),
+            ContentArguments(
+              title: 'Genotipo - Fenotipo - Ambiente',
+              img: AssetImage('assets/icons/biology/mariposa.png'),
+              pdfRoute: 'assets/pdf/Biology/pauta.pdf',
+            ),
+            ContentArguments(
+              title: 'Herencia Mendeliana y Sexual',
+              img: AssetImage('assets/icons/biology/adn.png'),
+              pdfRoute: 'assets/pdf/Biology/pauta.pdf',
+            ),
+            ContentArguments(
+              title: 'Mutaciones Cromosómicas',
+              img: AssetImage('assets/icons/biology/mutant.png'),
+              pdfRoute: 'assets/pdf/Biology/pauta.pdf',
+            ),
+            ContentArguments(
+              title: 'Cariogramas',
+              img: AssetImage('assets/icons/biology/cromosoma.png'),
+              pdfRoute: 'assets/pdf/Biology/pauta.pdf',
+            ),
+          ],
         ),
         ThemeArguments(
           title: 'Organismo y Ambiente',

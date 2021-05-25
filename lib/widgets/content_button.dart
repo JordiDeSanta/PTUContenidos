@@ -35,7 +35,7 @@ class ContentButton extends StatelessWidget {
           children: [
             Container(
               width: size * 450,
-              padding: EdgeInsets.all(10),
+              padding: EdgeInsets.all(15),
               child: Text(
                 settings.title,
                 style: styles.getSubtitle(context),
@@ -43,7 +43,6 @@ class ContentButton extends StatelessWidget {
             ),
             Expanded(
               child: ClipRRect(
-                borderRadius: BorderRadius.circular(20),
                 child: Image(
                   image: settings.img,
                   fit: BoxFit.cover,
