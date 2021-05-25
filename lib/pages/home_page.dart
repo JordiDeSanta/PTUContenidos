@@ -177,6 +177,48 @@ Widget biology() {
         ThemeArguments(
           title: 'Organismo y Ambiente',
           img: AssetImage('assets/img/bio4.jfif'),
+          contents: <ContentArguments>[
+            ContentArguments(
+              title: 'Fotosíntesis',
+              img: AssetImage('assets/icons/biology/foto.png'),
+              pdfRoute: 'assets/pdf/Biology/pauta.pdf',
+            ),
+            ContentArguments(
+              title: 'Flujo de Energía',
+              img: AssetImage('assets/icons/biology/energy.png'),
+              pdfRoute: 'assets/pdf/Biology/pauta.pdf',
+            ),
+            ContentArguments(
+              title: 'Representaciones en la Trama Trófica',
+              img: AssetImage('assets/icons/biology/turtle.png'),
+              pdfRoute: 'assets/pdf/Biology/pauta.pdf',
+            ),
+            ContentArguments(
+              title: 'Distribución y Abundancia',
+              img: AssetImage('assets/icons/biology/earth.png'),
+              pdfRoute: 'assets/pdf/Biology/pauta.pdf',
+            ),
+            ContentArguments(
+              title: 'Comunidades Ecológicas',
+              img: AssetImage('assets/icons/biology/ecosystem.png'),
+              pdfRoute: 'assets/pdf/Biology/pauta.pdf',
+            ),
+            ContentArguments(
+              title: 'Actividad Humana',
+              img: AssetImage('assets/icons/biology/rubbish.png'),
+              pdfRoute: 'assets/pdf/Biology/pauta.pdf',
+            ),
+            ContentArguments(
+              title: 'Sustentabilidad',
+              img: AssetImage('assets/icons/biology/recycle.png'),
+              pdfRoute: 'assets/pdf/Biology/pauta.pdf',
+            ),
+            ContentArguments(
+              title: 'Efecto Invernadero',
+              img: AssetImage('assets/icons/biology/pollution.png'),
+              pdfRoute: 'assets/pdf/Biology/pauta.pdf',
+            ),
+          ],
         ),
       ],
     ),
