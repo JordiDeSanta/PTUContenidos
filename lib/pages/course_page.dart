@@ -11,6 +11,7 @@ class CoursePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double size = MediaQuery.of(context).size.aspectRatio;
+    double h = MediaQuery.of(context).size.height;
     final CourseArguments settings = ModalRoute.of(context).settings.arguments;
 
     return Scaffold(
@@ -18,9 +19,10 @@ class CoursePage extends StatelessWidget {
         elevation: 0.0,
         title: Text(settings.title, style: styles.getTitle(context)),
         centerTitle: true,
-        toolbarHeight: size * 140,
+        toolbarHeight: h * 0.1,
         backgroundColor: settings.courseColor,
       ),
+      backgroundColor: Colors.white,
       body: Table(
         children: [
           TableRow(

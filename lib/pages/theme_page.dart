@@ -14,15 +14,17 @@ class ThemePage extends StatelessWidget {
     final ThemeArguments theme = settings[0];
     final Color color = settings[1];
     double size = MediaQuery.of(context).size.aspectRatio;
+    double h = MediaQuery.of(context).size.height;
 
     return Scaffold(
       appBar: AppBar(
         elevation: 0.0,
         title: Text(theme.title, style: styles.getSubtitle(context)),
         centerTitle: true,
-        toolbarHeight: size * 140,
+        toolbarHeight: h * 0.1,
         backgroundColor: color,
       ),
+      backgroundColor: Colors.white,
       body: ListView(
         children: createButtons(theme, color),
       ),

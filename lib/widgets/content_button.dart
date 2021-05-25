@@ -13,10 +13,11 @@ class ContentButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double size = MediaQuery.of(context).size.aspectRatio;
+    double h = MediaQuery.of(context).size.height;
 
     return Container(
       padding: EdgeInsets.all(5),
-      height: size * 180,
+      height: h * 0.15,
       child: ElevatedButton(
         onPressed: () {
           Navigator.pushNamed(context, 'content', arguments: [settings, color]);
@@ -43,6 +44,7 @@ class ContentButton extends StatelessWidget {
             ),
             Expanded(
               child: ClipRRect(
+                borderRadius: BorderRadius.circular(20),
                 child: Image(
                   image: settings.img,
                   fit: BoxFit.cover,

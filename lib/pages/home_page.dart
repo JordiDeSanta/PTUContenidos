@@ -36,7 +36,6 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    double size = MediaQuery.of(context).size.aspectRatio;
     double h = MediaQuery.of(context).size.height;
 
     return Scaffold(
@@ -44,9 +43,10 @@ class _HomePageState extends State<HomePage> {
         elevation: 0.0,
         title: Text('PTU Ciencias', style: styles.getTitle(context)),
         centerTitle: true,
-        toolbarHeight: size * 140,
+        toolbarHeight: h * 0.1,
         backgroundColor: Colors.black38,
       ),
+      backgroundColor: Colors.white,
       body: ListView(
         children: [
           SizedBox(height: 5),
@@ -229,25 +229,163 @@ Widget physics() {
   return CourseButton(
     CourseArguments(
       img: AssetImage('assets/icons/physics.png'),
-      buttonsColor: Colors.purple,
-      courseColor: Colors.purple,
+      buttonsColor: Colors.purpleAccent[400],
+      courseColor: Colors.purpleAccent,
       title: "Física",
       themes: <ThemeArguments>[
         ThemeArguments(
           title: 'Ondas',
           img: AssetImage('assets/img/phy1.jpg'),
+          contents: <ContentArguments>[
+            ContentArguments(
+              title: 'Transmisión de Ondas',
+              img: AssetImage('assets/icons/physics/waves.png'),
+              pdfRoute: '',
+            ),
+            ContentArguments(
+              title: 'Sonido y su Comportamiento',
+              img: AssetImage('assets/icons/physics/sound.png'),
+              pdfRoute: '',
+            ),
+            ContentArguments(
+              title: 'Espectros',
+              img: AssetImage('assets/icons/physics/espectro.png'),
+              pdfRoute: '',
+            ),
+            ContentArguments(
+              title: 'Espejos y Lentes',
+              img: AssetImage('assets/icons/physics/espejo.png'),
+              pdfRoute: '',
+            ),
+            ContentArguments(
+              title: 'Ondas Sísmicas',
+              img: AssetImage('assets/icons/physics/sismo.png'),
+              pdfRoute: '',
+            ),
+            ContentArguments(
+              title: 'Dispositivos',
+              img: AssetImage('assets/icons/physics/telescopy.png'),
+              pdfRoute: '',
+            ),
+          ],
         ),
         ThemeArguments(
           title: 'Mecánica',
           img: AssetImage('assets/img/phy2.jpg'),
+          contents: <ContentArguments>[
+            ContentArguments(
+              title: 'Conceptós Básicos',
+              img: AssetImage('assets/icons/physics/waves.png'),
+              pdfRoute: '',
+            ),
+            ContentArguments(
+              title: 'Movimiento Rectilíneo Uniforme',
+              img: AssetImage('assets/icons/physics/mru.png'),
+              pdfRoute: '',
+            ),
+            ContentArguments(
+              title: 'Movimiento Rectilíneo Uniformemente Variado',
+              img: AssetImage('assets/icons/physics/mruv.png'),
+              pdfRoute: '',
+            ),
+            ContentArguments(
+              title: 'Leyes de Kepler',
+              img: AssetImage('assets/icons/physics/planet.png'),
+              pdfRoute: '',
+            ),
+            ContentArguments(
+              title: 'Leyes de Newton',
+              img: AssetImage('assets/icons/physics/newton.png'),
+              pdfRoute: '',
+            ),
+            ContentArguments(
+              title: 'Dinámica y Tipos de Fuerza',
+              img: AssetImage('assets/icons/physics/force.png'),
+              pdfRoute: '',
+            ),
+            ContentArguments(
+              title: 'Ley de Gravitación Universal',
+              img: AssetImage('assets/icons/physics/planets.png'),
+              pdfRoute: '',
+            ),
+            ContentArguments(
+              title: 'Momentum Lineal e Impulso',
+              img: AssetImage('assets/icons/physics/momentum.png'),
+              pdfRoute: '',
+            ),
+            ContentArguments(
+              title: 'Presión, Arquímedes y Pascal',
+              img: AssetImage('assets/icons/physics/pressure.png'),
+              pdfRoute: '',
+            ),
+          ],
         ),
         ThemeArguments(
           title: 'Energía',
           img: AssetImage('assets/img/phy3.jpg'),
+          contents: <ContentArguments>[
+            ContentArguments(
+              title: 'Conservación de la Energía Mecánica',
+              img: AssetImage('assets/icons/physics/waves.png'),
+              pdfRoute: '',
+            ),
+            ContentArguments(
+              title: 'Trabajo y Potencia',
+              img: AssetImage('assets/icons/physics/waves.png'),
+              pdfRoute: '',
+            ),
+            ContentArguments(
+              title: 'Escalas Termométricas',
+              img: AssetImage('assets/icons/physics/waves.png'),
+              pdfRoute: '',
+            ),
+            ContentArguments(
+              title: 'Dilatación Térmica',
+              img: AssetImage('assets/icons/physics/waves.png'),
+              pdfRoute: '',
+            ),
+            ContentArguments(
+              title: 'Calor Latente y Cambios de Fase',
+              img: AssetImage('assets/icons/physics/waves.png'),
+              pdfRoute: '',
+            ),
+            ContentArguments(
+              title: 'Transmisión de Calor',
+              img: AssetImage('assets/icons/physics/waves.png'),
+              pdfRoute: '',
+            ),
+            ContentArguments(
+              title: 'Tectónica de Placas',
+              img: AssetImage('assets/icons/physics/waves.png'),
+              pdfRoute: '',
+            ),
+            ContentArguments(
+              title: 'Cambio Climático y Efecto Invernadero',
+              img: AssetImage('assets/icons/physics/waves.png'),
+              pdfRoute: '',
+            ),
+          ],
         ),
         ThemeArguments(
           title: 'Electricidad y Magnetismo',
           img: AssetImage('assets/img/phy4.jpg'),
+          contents: <ContentArguments>[
+            ContentArguments(
+              title: 'Ley de Ohm',
+              img: AssetImage('assets/icons/physics/waves.png'),
+              pdfRoute: '',
+            ),
+            ContentArguments(
+              title: 'Ley de Coulomb',
+              img: AssetImage('assets/icons/physics/waves.png'),
+              pdfRoute: '',
+            ),
+            ContentArguments(
+              title: 'Ley de Watt',
+              img: AssetImage('assets/icons/physics/waves.png'),
+              pdfRoute: '',
+            ),
+          ],
         ),
       ],
     ),

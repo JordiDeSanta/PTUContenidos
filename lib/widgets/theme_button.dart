@@ -13,10 +13,11 @@ class ThemeButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double size = MediaQuery.of(context).size.aspectRatio;
+    double h = MediaQuery.of(context).size.height;
 
     return Container(
       padding: EdgeInsets.all(5),
-      height: size * 600,
+      height: h * 0.4,
       child: ElevatedButton(
         onPressed: () {
           Navigator.pushNamed(context, 'theme', arguments: [settings, color]);
