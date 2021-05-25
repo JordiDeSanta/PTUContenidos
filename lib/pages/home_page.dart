@@ -1,16 +1,43 @@
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:provider/provider.dart';
+import 'package:ptucontenidos/providers/ad_state.dart';
 import 'package:ptucontenidos/providers/arguments.dart';
 import 'package:ptucontenidos/utils/texts.dart';
 import 'package:ptucontenidos/widgets/course_button.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   HomePage({Key key}) : super(key: key);
 
+  @override
+  _HomePageState createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
   final styles = TextStyles();
+
+  BannerAd banner;
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    final adState = Provider.of<AdState>(context);
+    adState.initialization.then((status) {
+      setState(() {
+        banner = BannerAd(
+          adUnitId: adState.bannerAdUnitId,
+          size: AdSize.largeBanner,
+          request: AdRequest(),
+          listener: adState.adListener,
+        )..load();
+      });
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     double size = MediaQuery.of(context).size.aspectRatio;
+    double h = MediaQuery.of(context).size.height;
 
     return Scaffold(
       appBar: AppBar(
@@ -26,6 +53,15 @@ class HomePage extends StatelessWidget {
           biology(),
           physics(),
           chemistry(),
+          if (banner == null)
+            Container()
+          else
+            Container(
+              height: h * 0.3,
+              child: AdWidget(
+                ad: banner,
+              ),
+            ),
         ],
       ),
     );
@@ -35,7 +71,7 @@ class HomePage extends StatelessWidget {
 Widget biology() {
   return CourseButton(
     CourseArguments(
-      img: AssetImage('assets/img/biology.png'),
+      img: AssetImage('assets/icons/biology.png'),
       buttonsColor: Colors.greenAccent,
       courseColor: Colors.greenAccent[400],
       title: "Biología",
@@ -64,7 +100,7 @@ Widget biology() {
 Widget physics() {
   return CourseButton(
     CourseArguments(
-      img: AssetImage('assets/img/physics.png'),
+      img: AssetImage('assets/icons/physics.png'),
       buttonsColor: Colors.purple,
       courseColor: Colors.purple,
       title: "Física",
@@ -93,7 +129,7 @@ Widget physics() {
 Widget chemistry() {
   return CourseButton(
     CourseArguments(
-      img: AssetImage('assets/img/chemistry.png'),
+      img: AssetImage('assets/icons/chemistry.png'),
       buttonsColor: Colors.lightGreen,
       courseColor: Colors.lightGreen,
       title: "Química",

@@ -1,13 +1,23 @@
-import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_cache_manager/flutter_cache_manager.dart';
-import 'package:pdf_render/pdf_render_widgets.dart';
 import 'package:ptucontenidos/pages/course_page.dart';
 import 'package:ptucontenidos/pages/home_page.dart';
 import 'package:ptucontenidos/pages/pdf_page.dart';
+import 'package:ptucontenidos/providers/ad_state.dart';
+import 'package:provider/provider.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
-void main(List<String> args) => runApp(new MyApp());
+void main(List<String> args) {
+  WidgetsFlutterBinding.ensureInitialized();
+  final initFuture = MobileAds.instance.initialize();
+  final adState = AdState(initFuture);
+  runApp(
+    Provider.value(
+      value: adState,
+      builder: (context, child) => MyApp(),
+    ),
+  );
+}
 
 class MyApp extends StatefulWidget {
   @override
