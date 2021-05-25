@@ -36,9 +36,27 @@ Widget biology() {
   return CourseButton(
     CourseArguments(
       img: AssetImage('assets/img/biology.png'),
-      buttonsColor: Colors.greenAccent[400],
+      buttonsColor: Colors.greenAccent,
       courseColor: Colors.greenAccent[400],
       title: "Biología",
+      themes: <ThemeArguments>[
+        ThemeArguments(
+          title: 'Organización, Estructura y Actividad Celular',
+          img: AssetImage('assets/img/bio1.jpeg'),
+        ),
+        ThemeArguments(
+          title: 'Procesos y Funciones Biológicas',
+          img: AssetImage('assets/img/bio2.jpg'),
+        ),
+        ThemeArguments(
+          title: 'Herencia y Evolución',
+          img: AssetImage('assets/img/bio3.jpg'),
+        ),
+        ThemeArguments(
+          title: 'Organismo y Ambiente',
+          img: AssetImage('assets/img/bio4.jfif'),
+        ),
+      ],
     ),
   );
 }
