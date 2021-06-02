@@ -103,7 +103,7 @@ Widget biology() {
             ContentArguments(
               title: 'Embarazo y Lactancia',
               img: AssetImage('assets/icons/biology/mother.png'),
-              pdfRoute: 'assets/pdf/Biology/pauta.pdf',
+              pdfRoute: 'assets/pdf/Biology/embarazo.pdf',
             ),
             ContentArguments(
               title: 'Control de Natalidad',
