@@ -88,7 +88,7 @@ Widget biology() {
             ContentArguments(
               title: 'Transportes en la Membrana',
               img: AssetImage('assets/icons/biology/membrane.png'),
-              pdfRoute: 'assets/pdf/Biology/pauta.pdf',
+              pdfRoute: 'assets/pdf/Biology/membrana.pdf',
             ),
           ],
         ),
@@ -99,7 +99,7 @@ Widget biology() {
             ContentArguments(
               title: 'Sexualidad y Pubertad',
               img: AssetImage('assets/icons/biology/sexuality.png'),
-              pdfRoute: 'assets/pdf/Biology/pauta.pdf',
+              pdfRoute: 'assets/pdf/Biology/sex.pdf',
             ),
             ContentArguments(
               title: 'Embarazo y Lactancia',

@@ -37,7 +37,7 @@ class _MyAppState extends State<MyApp> {
     );
 
     return MaterialApp(
-      title: 'PTU Formulas',
+      title: 'PTU Contenidos',
       initialRoute: 'home',
       debugShowCheckedModeBanner: false,
       routes: {
@@ -47,6 +47,7 @@ class _MyAppState extends State<MyApp> {
         'content': (BuildContext context) => PDFPage(),
       },
       theme: ThemeData(
+        appBarTheme: AppBarTheme(elevation: 0.0),
         accentColor: Colors.white,
         fontFamily: 'Louis',
       ),
