@@ -40,7 +40,6 @@ class _HomePageState extends State<HomePage> {
 
     return Scaffold(
       appBar: AppBar(
-        elevation: 0.0,
         title: Text('PTU Ciencias', style: styles.getTitle(context)),
         centerTitle: true,
         toolbarHeight: h * 0.1,
