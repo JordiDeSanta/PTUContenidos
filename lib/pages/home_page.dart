@@ -85,6 +85,11 @@ Widget biology() {
               pdfRoute: 'assets/pdf/Biology/celulas.pdf',
             ),
             ContentArguments(
+              title: 'Tipos Celulares',
+              img: AssetImage('assets/icons/biology/tipos.png'),
+              pdfRoute: 'assets/pdf/Biology/tipos.pdf',
+            ),
+            ContentArguments(
               title: 'Transportes en la Membrana',
               img: AssetImage('assets/icons/biology/membrane.png'),
               pdfRoute: 'assets/pdf/Biology/membrana.pdf',
@@ -108,27 +113,27 @@ Widget biology() {
             ContentArguments(
               title: 'Control de Natalidad',
               img: AssetImage('assets/icons/biology/baby.png'),
-              pdfRoute: 'assets/pdf/Biology/pauta.pdf',
+              pdfRoute: 'assets/pdf/Biology/natalidad.pdf',
             ),
             ContentArguments(
               title: 'ITS',
               img: AssetImage('assets/icons/biology/its.png'),
-              pdfRoute: 'assets/pdf/Biology/pauta.pdf',
+              pdfRoute: 'assets/pdf/Biology/its.pdf',
             ),
             ContentArguments(
               title: 'Nutrientes y Biomoléculas',
               img: AssetImage('assets/icons/biology/protein.png'),
-              pdfRoute: 'assets/pdf/Biology/pauta.pdf',
+              pdfRoute: 'assets/pdf/Biology/biomol.pdf',
             ),
             ContentArguments(
               title: 'Hormonas',
               img: AssetImage('assets/icons/biology/hormone.png'),
-              pdfRoute: 'assets/pdf/Biology/pauta.pdf',
+              pdfRoute: 'assets/pdf/Biology/hormonas.pdf',
             ),
             ContentArguments(
               title: 'Glicemia y Páncreas',
               img: AssetImage('assets/icons/biology/sugar.png'),
-              pdfRoute: 'assets/pdf/Biology/pauta.pdf',
+              pdfRoute: 'assets/pdf/Biology/pancreas.pdf',
             ),
           ],
         ),
