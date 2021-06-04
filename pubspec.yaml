@@ -60,6 +60,7 @@ flutter:
     - assets/img/
     - assets/icons/
     - assets/icons/biology/
+    - assets/icons/chemistry/
     - assets/icons/physics/
     - assets/pdf/Biology/
     - assets/pdf/Chemistry/

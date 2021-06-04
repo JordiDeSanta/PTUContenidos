@@ -390,13 +390,35 @@ Widget chemistry() {
   return CourseButton(
     CourseArguments(
       img: AssetImage('assets/icons/chemistry.png'),
-      buttonsColor: Colors.lightGreen,
+      buttonsColor: Colors.lightGreen[400],
       courseColor: Colors.lightGreen,
       title: "Química",
       themes: <ThemeArguments>[
         ThemeArguments(
           title: 'Estructura Atómica',
           img: AssetImage('assets/img/chem1.jpg'),
+          contents: <ContentArguments>[
+            ContentArguments(
+              title: 'La Materia',
+              img: AssetImage("assets/icons/chemistry/mezcla.png"),
+              pdfRoute: "assets/pdf/Chemistry/materia.pdf",
+            ),
+            ContentArguments(
+              title: 'Cambios en la Materia',
+              img: AssetImage("assets/icons/chemistry/procesos.png"),
+              pdfRoute: "assets/pdf/Chemistry/procesos.pdf",
+            ),
+            ContentArguments(
+              title: 'Modelos Atómicos',
+              img: AssetImage("assets/icons/chemistry/atom.png"),
+              pdfRoute: "assets/pdf/Chemistry/modelos.pdf",
+            ),
+            ContentArguments(
+              title: 'Conceptos Preliminares',
+              img: AssetImage("assets/icons/chemistry/bioquimico.png"),
+              pdfRoute: "assets/pdf/Chemistry/conceptos.pdf",
+            ),
+          ],
         ),
         ThemeArguments(
           title: 'Química Orgánica',
