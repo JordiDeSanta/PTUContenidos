@@ -418,6 +418,11 @@ Widget chemistry() {
               img: AssetImage("assets/icons/chemistry/bioquimico.png"),
               pdfRoute: "assets/pdf/Chemistry/conceptos.pdf",
             ),
+            ContentArguments(
+              title: 'Sistema Periódico',
+              img: AssetImage("assets/icons/chemistry/pt.png"),
+              pdfRoute: "assets/pdf/Chemistry/sistema.pdf",
+            ),
           ],
         ),
         ThemeArguments(
