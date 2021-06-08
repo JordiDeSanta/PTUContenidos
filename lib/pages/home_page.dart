@@ -423,6 +423,16 @@ Widget chemistry() {
               img: AssetImage("assets/icons/chemistry/pt.png"),
               pdfRoute: "assets/pdf/Chemistry/sistema.pdf",
             ),
+            ContentArguments(
+              title: 'Enlaces Químicos',
+              img: AssetImage("assets/icons/chemistry/molecular.png"),
+              pdfRoute: "assets/pdf/Chemistry/enlaces.pdf",
+            ),
+            ContentArguments(
+              title: 'Estructura de Lewis',
+              img: AssetImage("assets/icons/chemistry/lewis.png"),
+              pdfRoute: "assets/pdf/Chemistry/lewis.pdf",
+            ),
           ],
         ),
         ThemeArguments(
@@ -432,6 +442,28 @@ Widget chemistry() {
         ThemeArguments(
           title: 'Reacciones químicas y Estequiometría',
           img: AssetImage('assets/img/chem3.jpg'),
+          contents: <ContentArguments>[
+            ContentArguments(
+              title: 'Leyes Químicas',
+              img: AssetImage("assets/icons/chemistry/leyes.png"),
+              pdfRoute: "assets/pdf/Chemistry/leyes.pdf",
+            ),
+            ContentArguments(
+              title: 'Reactivo Limitante',
+              img: AssetImage("assets/icons/chemistry/sol.png"),
+              pdfRoute: "assets/pdf/Chemistry/reactivos.pdf",
+            ),
+            ContentArguments(
+              title: 'Soluciones',
+              img: AssetImage("assets/icons/chemistry/flask.png"),
+              pdfRoute: "assets/pdf/Chemistry/soluciones.pdf",
+            ),
+            ContentArguments(
+              title: 'Concentraciones',
+              img: AssetImage("assets/icons/chemistry/concentracion.png"),
+              pdfRoute: "assets/pdf/Chemistry/concentracion.pdf",
+            ),
+          ],
         ),
       ],
     ),
