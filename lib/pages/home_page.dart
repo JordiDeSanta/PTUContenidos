@@ -438,15 +438,57 @@ Widget chemistry() {
         ThemeArguments(
           title: 'Química Orgánica',
           img: AssetImage('assets/img/chem2.jpg'),
+          contents: <ContentArguments>[
+            ContentArguments(
+              title: 'Carbono y sus Propiedades',
+              img: AssetImage("assets/icons/chemistry/carbon.png"),
+              pdfRoute: "assets/pdf/Chemistry/carbono.pdf",
+            ),
+            ContentArguments(
+              title: 'Modelos y Fórmulas',
+              img: AssetImage("assets/icons/chemistry/formula.png"),
+              pdfRoute: "assets/pdf/Chemistry/modelos.pdf",
+            ),
+            ContentArguments(
+              title: 'Grupos Funcionales',
+              img: AssetImage("assets/icons/chemistry/sust.png"),
+              pdfRoute: "assets/pdf/Chemistry/grupos.pdf",
+            ),
+            ContentArguments(
+              title: 'Nomenclatura de Orgánicos',
+              img: AssetImage("assets/icons/chemistry/nom.png"),
+              pdfRoute: "assets/pdf/Chemistry/organicos.pdf",
+            ),
+          ],
         ),
         ThemeArguments(
           title: 'Reacciones químicas y Estequiometría',
           img: AssetImage('assets/img/chem3.jpg'),
           contents: <ContentArguments>[
             ContentArguments(
+              title: 'Gases',
+              img: AssetImage("assets/icons/chemistry/gas.png"),
+              pdfRoute: "assets/pdf/Chemistry/gases.pdf",
+            ),
+            ContentArguments(
+              title: 'Conceptos Moleculares',
+              img: AssetImage("assets/icons/chemistry/water.png"),
+              pdfRoute: "assets/pdf/Chemistry/moleculares.pdf",
+            ),
+            ContentArguments(
+              title: 'Química Cuantitativa',
+              img: AssetImage("assets/icons/chemistry/inorganic.png"),
+              pdfRoute: "assets/pdf/Chemistry/cuantitativa.pdf",
+            ),
+            ContentArguments(
               title: 'Leyes Químicas',
               img: AssetImage("assets/icons/chemistry/leyes.png"),
               pdfRoute: "assets/pdf/Chemistry/leyes.pdf",
+            ),
+            ContentArguments(
+              title: 'Análisis Porcentual',
+              img: AssetImage("assets/icons/chemistry/percentage.png"),
+              pdfRoute: "assets/pdf/Chemistry/porcentual.pdf",
             ),
             ContentArguments(
               title: 'Reactivo Limitante',
