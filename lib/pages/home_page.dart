@@ -234,22 +234,27 @@ Widget physics() {
             ContentArguments(
               title: 'Transmisión de Ondas',
               img: AssetImage('assets/icons/physics/waves.png'),
-              pdfRoute: '',
+              pdfRoute: 'assets/pdf/Physics/ondas.pdf',
             ),
             ContentArguments(
               title: 'Sonido y su Comportamiento',
               img: AssetImage('assets/icons/physics/sound.png'),
-              pdfRoute: '',
+              pdfRoute: 'assets/pdf/Physics/sonido.pdf',
             ),
             ContentArguments(
               title: 'Espectros',
               img: AssetImage('assets/icons/physics/espectro.png'),
-              pdfRoute: '',
+              pdfRoute: 'assets/pdf/Physics/espectros.pdf',
+            ),
+            ContentArguments(
+              title: 'Luz y su Comportamiento',
+              img: AssetImage('assets/icons/physics/luz.png'),
+              pdfRoute: 'assets/pdf/Physics/luz.pdf',
             ),
             ContentArguments(
               title: 'Espejos y Lentes',
               img: AssetImage('assets/icons/physics/espejo.png'),
-              pdfRoute: '',
+              pdfRoute: 'assets/pdf/Physics/espejoslentes.pdf',
             ),
             ContentArguments(
               title: 'Ondas Sísmicas',
