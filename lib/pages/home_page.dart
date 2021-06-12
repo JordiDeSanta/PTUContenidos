@@ -5,6 +5,7 @@ import 'package:ptucontenidos/providers/ad_state.dart';
 import 'package:ptucontenidos/providers/arguments.dart';
 import 'package:ptucontenidos/utils/texts.dart';
 import 'package:ptucontenidos/widgets/course_button.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key key}) : super(key: key);
@@ -40,7 +41,7 @@ class _HomePageState extends State<HomePage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('PTU Ciencias', style: styles.getTitle(context)),
+        title: Text('PTU Contenidos', style: styles.getTitle(context)),
         centerTitle: true,
         toolbarHeight: h * 0.1,
         backgroundColor: Colors.black38,
@@ -49,6 +50,7 @@ class _HomePageState extends State<HomePage> {
       body: ListView(
         children: [
           SizedBox(height: 5),
+          fButton(context, styles),
           biology(),
           physics(),
           chemistry(),
@@ -274,18 +276,18 @@ Widget physics() {
           contents: <ContentArguments>[
             ContentArguments(
               title: 'Conceptós Básicos',
-              img: AssetImage('assets/icons/physics/waves.png'),
-              pdfRoute: '',
+              img: AssetImage('assets/icons/physics/book.png'),
+              pdfRoute: 'assets/pdf/Physics/conceptos.pdf',
             ),
             ContentArguments(
               title: 'Movimiento Rectilíneo Uniforme',
               img: AssetImage('assets/icons/physics/mru.png'),
-              pdfRoute: '',
+              pdfRoute: 'assets/pdf/Physics/mru.pdf',
             ),
             ContentArguments(
               title: 'Movimiento Rectilíneo Uniformemente Variado',
               img: AssetImage('assets/icons/physics/mruv.png'),
-              pdfRoute: '',
+              pdfRoute: 'assets/pdf/Physics/mruv.pdf',
             ),
             ContentArguments(
               title: 'Leyes de Kepler',
@@ -295,12 +297,12 @@ Widget physics() {
             ContentArguments(
               title: 'Leyes de Newton',
               img: AssetImage('assets/icons/physics/newton.png'),
-              pdfRoute: '',
+              pdfRoute: 'assets/pdf/Physics/newton.pdf',
             ),
             ContentArguments(
               title: 'Dinámica y Tipos de Fuerza',
               img: AssetImage('assets/icons/physics/force.png'),
-              pdfRoute: '',
+              pdfRoute: 'assets/pdf/Physics/dinamica.pdf',
             ),
             ContentArguments(
               title: 'Ley de Gravitación Universal',
@@ -515,4 +517,52 @@ Widget chemistry() {
       ],
     ),
   );
+}
+
+Widget fButton(BuildContext context, TextStyles styles) {
+  double size = MediaQuery.of(context).size.aspectRatio;
+
+  return Padding(
+    padding: EdgeInsets.symmetric(vertical: size * 18, horizontal: size * 10),
+    child: ElevatedButton(
+      style: ButtonStyle(
+        elevation: MaterialStateProperty.all(0.0),
+        shape: MaterialStateProperty.all(
+          RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20.0),
+          ),
+        ),
+        backgroundColor: MaterialStateProperty.all(Colors.brown[300]),
+      ),
+      child: Container(
+        padding: EdgeInsets.symmetric(vertical: size * 40),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Image(
+              height: size * 180,
+              image: AssetImage('assets/icons/logoF.png'),
+              fit: BoxFit.cover,
+            ),
+            Container(
+              padding: EdgeInsets.only(left: size * 40),
+              width: size * 400,
+              child: Text(
+                'Fórmulas',
+                style: styles.getTitle(context),
+                overflow: TextOverflow.ellipsis,
+              ),
+            )
+          ],
+        ),
+      ),
+      onPressed: _launchURL,
+    ),
+  );
+}
+
+void _launchURL() async {
+  final _url =
+      'https://play.google.com/store/apps/details?id=com.jordidev.ptuformulas';
+  await canLaunch(_url) ? await launch(_url) : throw 'Could not launch $_url';
 }
