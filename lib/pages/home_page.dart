@@ -50,10 +50,10 @@ class _HomePageState extends State<HomePage> {
       body: ListView(
         children: [
           SizedBox(height: 5),
-          fButton(context, styles),
           biology(),
           physics(),
           chemistry(),
+          fButton(context, styles),
           if (banner == null)
             Container()
           else
@@ -312,7 +312,7 @@ Widget physics() {
             ContentArguments(
               title: 'Momentum Lineal e Impulso',
               img: AssetImage('assets/icons/physics/momentum.png'),
-              pdfRoute: '',
+              pdfRoute: 'assets/pdf/Physics/momentum.pdf',
             ),
             ContentArguments(
               title: 'Presión, Arquímedes y Pascal',
@@ -327,13 +327,13 @@ Widget physics() {
           contents: <ContentArguments>[
             ContentArguments(
               title: 'Conservación de la Energía Mecánica',
-              img: AssetImage('assets/icons/physics/waves.png'),
-              pdfRoute: '',
+              img: AssetImage('assets/icons/physics/energy.png'),
+              pdfRoute: 'assets/pdf/Physics/emecanica.pdf',
             ),
             ContentArguments(
               title: 'Trabajo y Potencia',
-              img: AssetImage('assets/icons/physics/waves.png'),
-              pdfRoute: '',
+              img: AssetImage('assets/icons/physics/power.png'),
+              pdfRoute: 'assets/pdf/Physics/trabypot.pdf',
             ),
             ContentArguments(
               title: 'Escalas Termométricas',

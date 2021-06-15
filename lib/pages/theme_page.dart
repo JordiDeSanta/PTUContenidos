@@ -1,12 +1,38 @@
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:provider/provider.dart';
+import 'package:ptucontenidos/providers/ad_state.dart';
 import 'package:ptucontenidos/providers/arguments.dart';
 import 'package:ptucontenidos/utils/texts.dart';
 import 'package:ptucontenidos/widgets/content_button.dart';
 
-class ThemePage extends StatelessWidget {
+class ThemePage extends StatefulWidget {
   ThemePage();
 
+  @override
+  _ThemePageState createState() => _ThemePageState();
+}
+
+class _ThemePageState extends State<ThemePage> {
   final styles = TextStyles();
+
+  BannerAd banner;
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    final adState = Provider.of<AdState>(context);
+    adState.initialization.then((status) {
+      setState(() {
+        banner = BannerAd(
+          adUnitId: adState.bannerAdUnitId,
+          size: AdSize.mediumRectangle,
+          request: AdRequest(),
+          listener: adState.adListener,
+        )..load();
+      });
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -30,17 +56,29 @@ class ThemePage extends StatelessWidget {
       ),
     );
   }
-}
 
-List<Widget> createButtons(ThemeArguments args, Color c) {
-  List<Widget> buttons = [];
+  List<Widget> createButtons(ThemeArguments args, Color c) {
+    double h = MediaQuery.of(context).size.height;
 
-  args.contents.forEach(
-    (e) {
-      Widget _temp = ContentButton(settings: e, color: c);
-      buttons.add(_temp);
-    },
-  );
+    List<Widget> buttons = [
+      if (banner == null)
+        Container()
+      else
+        Container(
+          height: h * 0.4,
+          child: AdWidget(
+            ad: banner,
+          ),
+        ),
+    ];
 
-  return buttons;
+    args.contents.forEach(
+      (e) {
+        Widget _temp = ContentButton(settings: e, color: c);
+        buttons.add(_temp);
+      },
+    );
+
+    return buttons;
+  }
 }
