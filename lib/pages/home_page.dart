@@ -283,6 +283,8 @@ Widget physics() {
               title: 'Movimiento Rectilíneo Uniforme',
               img: AssetImage('assets/icons/physics/mru.png'),
               pdfRoute: 'assets/pdf/Physics/mru.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bEELQdDWMvdR97UziO3i3_y',
             ),
             ContentArguments(
               title: 'Movimiento Rectilíneo Uniformemente Variado',

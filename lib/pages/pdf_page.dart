@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pdf_render/pdf_render_widgets.dart';
 import 'package:ptucontenidos/providers/arguments.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class PDFPage extends StatefulWidget {
   @override
@@ -29,6 +30,12 @@ class _PDFPageState extends State<PDFPage> {
         backgroundColor: color,
         toolbarHeight: size * 140,
         centerTitle: true,
+        actions: [
+          IconButton(
+            onPressed: () => _launchURL(content),
+            icon: Icon(Icons.ondemand_video_rounded),
+          ),
+        ],
       ),
       backgroundColor: Colors.grey,
       body: PdfViewer.openAsset(
@@ -56,5 +63,10 @@ class _PDFPageState extends State<PDFPage> {
         ],
       ),
     );
+  }
+
+  void _launchURL(ContentArguments c) async {
+    final _url = c.vidUrl;
+    await canLaunch(_url) ? await launch(_url) : throw 'Could not launch $_url';
   }
 }

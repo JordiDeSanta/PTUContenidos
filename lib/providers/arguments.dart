@@ -32,10 +32,12 @@ class ContentArguments {
   String title;
   ImageProvider img;
   String pdfRoute;
+  String vidUrl;
 
   ContentArguments({
     this.title,
     this.img,
     this.pdfRoute,
+    this.vidUrl = '',
   });
 }
