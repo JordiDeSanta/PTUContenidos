@@ -266,7 +266,7 @@ Widget physics() {
             ContentArguments(
               title: 'Dispositivos',
               img: AssetImage('assets/icons/physics/telescopy.png'),
-              pdfRoute: '',
+              pdfRoute: 'assets/pdf/Physics/dispositivos.pdf',
             ),
           ],
         ),
@@ -339,13 +339,13 @@ Widget physics() {
             ),
             ContentArguments(
               title: 'Escalas Termométricas',
-              img: AssetImage('assets/icons/physics/waves.png'),
-              pdfRoute: '',
+              img: AssetImage('assets/icons/physics/escala.png'),
+              pdfRoute: 'assets/pdf/Physics/escalas.pdf',
             ),
             ContentArguments(
               title: 'Dilatación Térmica',
-              img: AssetImage('assets/icons/physics/waves.png'),
-              pdfRoute: '',
+              img: AssetImage('assets/icons/physics/termo.png'),
+              pdfRoute: 'assets/pdf/Physics/dilatacion.pdf',
             ),
             ContentArguments(
               title: 'Calor Latente y Cambios de Fase',
