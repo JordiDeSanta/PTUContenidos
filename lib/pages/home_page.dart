@@ -261,7 +261,7 @@ Widget physics() {
             ContentArguments(
               title: 'Ondas Sísmicas',
               img: AssetImage('assets/icons/physics/sismo.png'),
-              pdfRoute: '',
+              pdfRoute: 'assets/pdf/Physics/sismicas.pdf',
             ),
             ContentArguments(
               title: 'Dispositivos',
@@ -294,7 +294,7 @@ Widget physics() {
             ContentArguments(
               title: 'Leyes de Kepler',
               img: AssetImage('assets/icons/physics/planet.png'),
-              pdfRoute: '',
+              pdfRoute: 'assets/pdf/Physics/kepler.pdf',
             ),
             ContentArguments(
               title: 'Leyes de Newton',
@@ -309,7 +309,7 @@ Widget physics() {
             ContentArguments(
               title: 'Ley de Gravitación Universal',
               img: AssetImage('assets/icons/physics/planets.png'),
-              pdfRoute: '',
+              pdfRoute: 'assets/pdf/Physics/gravitacion.pdf',
             ),
             ContentArguments(
               title: 'Momentum Lineal e Impulso',
@@ -349,23 +349,23 @@ Widget physics() {
             ),
             ContentArguments(
               title: 'Calor Latente y Cambios de Fase',
-              img: AssetImage('assets/icons/physics/waves.png'),
-              pdfRoute: '',
+              img: AssetImage('assets/icons/physics/ice.png'),
+              pdfRoute: 'assets/pdf/Physics/latente.pdf',
             ),
             ContentArguments(
               title: 'Transmisión de Calor',
-              img: AssetImage('assets/icons/physics/waves.png'),
-              pdfRoute: '',
+              img: AssetImage('assets/icons/physics/heat.png'),
+              pdfRoute: 'assets/pdf/Physics/calor.pdf',
             ),
             ContentArguments(
               title: 'Tectónica de Placas',
-              img: AssetImage('assets/icons/physics/waves.png'),
-              pdfRoute: '',
+              img: AssetImage('assets/icons/physics/geo.png'),
+              pdfRoute: 'assets/pdf/Physics/tectonica.pdf',
             ),
             ContentArguments(
               title: 'Cambio Climático y Efecto Invernadero',
-              img: AssetImage('assets/icons/physics/waves.png'),
-              pdfRoute: '',
+              img: AssetImage('assets/icons/physics/pol.png'),
+              pdfRoute: 'assets/pdf/Physics/clima.pdf',
             ),
           ],
         ),
