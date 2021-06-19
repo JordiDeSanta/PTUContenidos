@@ -85,16 +85,22 @@ Widget biology() {
               title: 'Organelos de las Células',
               img: AssetImage('assets/icons/biology/celula.png'),
               pdfRoute: 'assets/pdf/Biology/celulas.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bH4vXE1hX_NwKoyXsa_W2rc',
             ),
             ContentArguments(
               title: 'Tipos Celulares',
               img: AssetImage('assets/icons/biology/tipos.png'),
               pdfRoute: 'assets/pdf/Biology/tipos.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bEs3N5sWIjKe3IV9Jql-gWg',
             ),
             ContentArguments(
               title: 'Transportes en la Membrana',
               img: AssetImage('assets/icons/biology/membrane.png'),
               pdfRoute: 'assets/pdf/Biology/membrana.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bG_Tto1pXKKS_l2aDLsztVf',
             ),
           ],
         ),
@@ -106,36 +112,57 @@ Widget biology() {
               title: 'Sexualidad y Pubertad',
               img: AssetImage('assets/icons/biology/sexuality.png'),
               pdfRoute: 'assets/pdf/Biology/sex.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bFikIId65VmYeCVq_5oeeSr',
+            ),
+            ContentArguments(
+              title: 'Ciclo Ovárico',
+              img: AssetImage('assets/icons/biology/uterus.png'),
+              pdfRoute: 'assets/pdf/Biology/ovarico.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bHbxlbgmqy6OZXeCPv3sABK',
             ),
             ContentArguments(
               title: 'Embarazo y Lactancia',
               img: AssetImage('assets/icons/biology/mother.png'),
               pdfRoute: 'assets/pdf/Biology/embarazo.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bFsdLaze_a9bYjlr_Lwkq_u',
             ),
             ContentArguments(
               title: 'Control de Natalidad',
               img: AssetImage('assets/icons/biology/baby.png'),
               pdfRoute: 'assets/pdf/Biology/natalidad.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bHcfDuhRcMfHo7nrGS4s6-P',
             ),
             ContentArguments(
               title: 'ITS',
               img: AssetImage('assets/icons/biology/its.png'),
               pdfRoute: 'assets/pdf/Biology/its.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bHMzB5VoFjWfd9XieubE0Qj',
             ),
             ContentArguments(
               title: 'Nutrientes y Biomoléculas',
               img: AssetImage('assets/icons/biology/protein.png'),
               pdfRoute: 'assets/pdf/Biology/biomol.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bHX9C1-p6M9aY3w9lUsRmLF',
             ),
             ContentArguments(
               title: 'Hormonas',
               img: AssetImage('assets/icons/biology/hormone.png'),
               pdfRoute: 'assets/pdf/Biology/hormonas.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bE7Nr-f_61EpfGACllFfa4r',
             ),
             ContentArguments(
               title: 'Glicemia y Páncreas',
               img: AssetImage('assets/icons/biology/sugar.png'),
               pdfRoute: 'assets/pdf/Biology/pancreas.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bHdPWxS1Z8rpm1xIvKr7tKq',
             ),
           ],
         ),
@@ -147,36 +174,50 @@ Widget biology() {
               title: 'Ciclo Celular',
               img: AssetImage('assets/icons/biology/cycle.png'),
               pdfRoute: 'assets/pdf/Biology/ciclo.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bH9DsBAMlE4s-ILKrqRBg6-',
             ),
             ContentArguments(
               title: 'Mitosis',
               img: AssetImage('assets/icons/biology/mitosis.png'),
               pdfRoute: 'assets/pdf/Biology/mitosis.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bGa-jpZle5g0XSndRSo5Ezx',
             ),
             ContentArguments(
               title: 'Meosis',
               img: AssetImage('assets/icons/biology/esperm.png'),
               pdfRoute: 'assets/pdf/Biology/meiosis.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bE8TP78ySkdS-ZVeYo9Eawm',
             ),
             ContentArguments(
               title: 'Genotipo - Fenotipo - Ambiente',
               img: AssetImage('assets/icons/biology/mariposa.png'),
               pdfRoute: 'assets/pdf/Biology/gfa.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bGjnBrt_FupUvhXxnR9G1-O',
             ),
             ContentArguments(
               title: 'Herencia Mendeliana y Sexual',
               img: AssetImage('assets/icons/biology/adn.png'),
               pdfRoute: 'assets/pdf/Biology/mendel.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bEkN3Ne38ce2zuFQI1C_9T3',
             ),
             ContentArguments(
               title: 'Mutaciones Cromosómicas',
               img: AssetImage('assets/icons/biology/mutant.png'),
               pdfRoute: 'assets/pdf/Biology/mutaciones.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bHbgiwm8ypAM_zVxJIROC1M',
             ),
             ContentArguments(
               title: 'Cariogramas',
               img: AssetImage('assets/icons/biology/cromosoma.png'),
               pdfRoute: 'assets/pdf/Biology/cariogramas.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bEnzOV7ImBH-qjmBpKyylnp',
             ),
           ],
         ),
@@ -188,26 +229,36 @@ Widget biology() {
               title: 'Fotosíntesis',
               img: AssetImage('assets/icons/biology/foto.png'),
               pdfRoute: 'assets/pdf/Biology/fotosintesis.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bGmh-gcoEe6OIA927LVKsok',
             ),
             ContentArguments(
               title: 'Flujo de Energía',
               img: AssetImage('assets/icons/biology/energy.png'),
               pdfRoute: 'assets/pdf/Biology/energia.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bGaKmcMd6hGnefa_DbOAnuu',
             ),
             ContentArguments(
               title: 'Distribución y Abundancia',
               img: AssetImage('assets/icons/biology/earth.png'),
               pdfRoute: 'assets/pdf/Biology/dya.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bFMLCYxVS1fVSHekQ3ODvEA',
             ),
             ContentArguments(
               title: 'Comunidades Ecológicas',
               img: AssetImage('assets/icons/biology/ecosystem.png'),
               pdfRoute: 'assets/pdf/Biology/comunidades.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bHX7Dx9gjnMkx1hHuBVkfB9',
             ),
             ContentArguments(
               title: 'Actividad Humana',
               img: AssetImage('assets/icons/biology/rubbish.png'),
               pdfRoute: 'assets/pdf/Biology/humanidad.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bEzC9lIouHmRcyv7jECj00f',
             ),
             ContentArguments(
               title: 'Sustentabilidad',

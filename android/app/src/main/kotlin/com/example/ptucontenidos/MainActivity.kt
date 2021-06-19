@@ -1,4 +1,4 @@
-package com.example.ptucontenidos
+package com.jordidev.ptucontenidos
 
 import io.flutter.embedding.android.FlutterActivity
 
