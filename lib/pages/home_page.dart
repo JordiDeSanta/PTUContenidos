@@ -288,11 +288,15 @@ Widget physics() {
               title: 'Transmisión de Ondas',
               img: AssetImage('assets/icons/physics/waves.png'),
               pdfRoute: 'assets/pdf/Physics/ondas.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bH9m8I0UIHvD88VoGgIwMnL',
             ),
             ContentArguments(
               title: 'Sonido y su Comportamiento',
               img: AssetImage('assets/icons/physics/sound.png'),
               pdfRoute: 'assets/pdf/Physics/sonido.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bHUxaf0fkF3tgGO9Lv5h1nL',
             ),
             ContentArguments(
               title: 'Espectros',
