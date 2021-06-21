@@ -302,21 +302,29 @@ Widget physics() {
               title: 'Espectros',
               img: AssetImage('assets/icons/physics/espectro.png'),
               pdfRoute: 'assets/pdf/Physics/espectros.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bEt1WL1qSfxf3tJjx4fC0ni',
             ),
             ContentArguments(
               title: 'Luz y su Comportamiento',
               img: AssetImage('assets/icons/physics/luz.png'),
               pdfRoute: 'assets/pdf/Physics/luz.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bE5fNiVhiiDluqZbFKFvUV6',
             ),
             ContentArguments(
               title: 'Espejos y Lentes',
               img: AssetImage('assets/icons/physics/espejo.png'),
               pdfRoute: 'assets/pdf/Physics/espejoslentes.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bF0rdqEL44uf0CrQy0laRH8',
             ),
             ContentArguments(
               title: 'Ondas Sísmicas',
               img: AssetImage('assets/icons/physics/sismo.png'),
               pdfRoute: 'assets/pdf/Physics/sismicas.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bGCGEmE41pd6mg5rieBp11a',
             ),
             ContentArguments(
               title: 'Dispositivos',
@@ -333,6 +341,8 @@ Widget physics() {
               title: 'Conceptós Básicos',
               img: AssetImage('assets/icons/physics/book.png'),
               pdfRoute: 'assets/pdf/Physics/conceptos.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bFdz4lF5IEQKtcBAws6-wj3',
             ),
             ContentArguments(
               title: 'Movimiento Rectilíneo Uniforme',
@@ -345,36 +355,50 @@ Widget physics() {
               title: 'Movimiento Rectilíneo Uniformemente Variado',
               img: AssetImage('assets/icons/physics/mruv.png'),
               pdfRoute: 'assets/pdf/Physics/mruv.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bEDJIadnQKRCDZHmyesmYiO',
             ),
             ContentArguments(
               title: 'Leyes de Kepler',
               img: AssetImage('assets/icons/physics/planet.png'),
               pdfRoute: 'assets/pdf/Physics/kepler.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bHcLUuwTL_hpBlAfPn_nbdx',
             ),
             ContentArguments(
               title: 'Leyes de Newton',
               img: AssetImage('assets/icons/physics/newton.png'),
               pdfRoute: 'assets/pdf/Physics/newton.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bHzcZSYlkMhkZgGl27kO1z9',
             ),
             ContentArguments(
               title: 'Dinámica y Tipos de Fuerza',
               img: AssetImage('assets/icons/physics/force.png'),
               pdfRoute: 'assets/pdf/Physics/dinamica.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bEGkZ7DymT1smwek8TQkKvE',
             ),
             ContentArguments(
               title: 'Ley de Gravitación Universal',
               img: AssetImage('assets/icons/physics/planets.png'),
               pdfRoute: 'assets/pdf/Physics/gravitacion.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bG1B5gOs25WzJAKX30rThWd',
             ),
             ContentArguments(
               title: 'Momentum Lineal e Impulso',
               img: AssetImage('assets/icons/physics/momentum.png'),
               pdfRoute: 'assets/pdf/Physics/momentum.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bEhwvscOtfhFfPb1uzI6FdR',
             ),
             ContentArguments(
               title: 'Presión, Arquímedes y Pascal',
               img: AssetImage('assets/icons/physics/pressure.png'),
-              pdfRoute: '',
+              pdfRoute: 'assets/pdf/Physics/hidro.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bERJnTZlf8BVpNKvqFaUUTa',
             ),
           ],
         ),
@@ -386,41 +410,57 @@ Widget physics() {
               title: 'Conservación de la Energía Mecánica',
               img: AssetImage('assets/icons/physics/energy.png'),
               pdfRoute: 'assets/pdf/Physics/emecanica.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bEcEX7-siX4qbhMkE9pP_8_',
             ),
             ContentArguments(
               title: 'Trabajo y Potencia',
               img: AssetImage('assets/icons/physics/power.png'),
               pdfRoute: 'assets/pdf/Physics/trabypot.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bFCHRQkmF2zfAcosn37P4b0',
             ),
             ContentArguments(
               title: 'Escalas Termométricas',
               img: AssetImage('assets/icons/physics/escala.png'),
               pdfRoute: 'assets/pdf/Physics/escalas.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bExO6zHFS9HNR6g6r9oTS69',
             ),
             ContentArguments(
               title: 'Dilatación Térmica',
               img: AssetImage('assets/icons/physics/termo.png'),
               pdfRoute: 'assets/pdf/Physics/dilatacion.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bHAry-QFb6bUj3WXmRslbDx',
             ),
             ContentArguments(
               title: 'Calor Latente y Cambios de Fase',
               img: AssetImage('assets/icons/physics/ice.png'),
               pdfRoute: 'assets/pdf/Physics/latente.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bFEOfeolD9qzJUNm1Tk-QZH',
             ),
             ContentArguments(
               title: 'Transmisión de Calor',
               img: AssetImage('assets/icons/physics/heat.png'),
               pdfRoute: 'assets/pdf/Physics/calor.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bGcqfbj_Ipzj-F0HgagrN2u',
             ),
             ContentArguments(
               title: 'Tectónica de Placas',
               img: AssetImage('assets/icons/physics/geo.png'),
               pdfRoute: 'assets/pdf/Physics/tectonica.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bFlwtAOWeWB_0m2tGLDwQsP',
             ),
             ContentArguments(
               title: 'Cambio Climático y Efecto Invernadero',
               img: AssetImage('assets/icons/physics/pol.png'),
               pdfRoute: 'assets/pdf/Physics/clima.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bF31dXHvh-olI1gekpMjYdb',
             ),
           ],
         ),
