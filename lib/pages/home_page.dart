@@ -485,7 +485,12 @@ Widget physics() {
             ),
             ContentArguments(
               title: 'Ley de Watt',
-              img: AssetImage('assets/icons/physics/waves.png'),
+              img: AssetImage('assets/icons/physics/power.png'),
+              pdfRoute: '',
+            ),
+            ContentArguments(
+              title: 'Magnetismo',
+              img: AssetImage('assets/icons/physics/magnetismo.png'),
               pdfRoute: '',
             ),
           ],
