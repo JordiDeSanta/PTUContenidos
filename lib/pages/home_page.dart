@@ -469,14 +469,19 @@ Widget physics() {
           img: AssetImage('assets/img/phy4.jpg'),
           contents: <ContentArguments>[
             ContentArguments(
+              title: 'Electrización',
+              img: AssetImage('assets/icons/physics/enchufe.png'),
+              pdfRoute: 'assets/pdf/Physics/electrizacion.pdf',
+            ),
+            ContentArguments(
               title: 'Ley de Ohm',
-              img: AssetImage('assets/icons/physics/waves.png'),
-              pdfRoute: '',
+              img: AssetImage('assets/icons/physics/ohm.png'),
+              pdfRoute: 'assets/pdf/Physics/ohm.pdf',
             ),
             ContentArguments(
               title: 'Ley de Coulomb',
-              img: AssetImage('assets/icons/physics/waves.png'),
-              pdfRoute: '',
+              img: AssetImage('assets/icons/physics/coulomb.png'),
+              pdfRoute: 'assets/pdf/Physics/coulomb.pdf',
             ),
             ContentArguments(
               title: 'Ley de Watt',
