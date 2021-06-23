@@ -580,16 +580,22 @@ Widget chemistry() {
               title: 'Carbono y sus Propiedades',
               img: AssetImage("assets/icons/chemistry/carbon.png"),
               pdfRoute: "assets/pdf/Chemistry/carbono.pdf",
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bF9XBVXmF3urUF8y3ocUEEu',
             ),
             ContentArguments(
               title: 'Modelos y Fórmulas',
               img: AssetImage("assets/icons/chemistry/formula.png"),
               pdfRoute: "assets/pdf/Chemistry/modelos.pdf",
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bESwhgR1qYBLMkuLKWrhzmk',
             ),
             ContentArguments(
               title: 'Grupos Funcionales',
               img: AssetImage("assets/icons/chemistry/sust.png"),
               pdfRoute: "assets/pdf/Chemistry/grupos.pdf",
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bH3e163Eu1uzQ_iJ-7apUo3',
             ),
             ContentArguments(
               title: 'Nomenclatura de Orgánicos',
