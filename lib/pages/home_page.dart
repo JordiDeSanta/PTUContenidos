@@ -472,26 +472,36 @@ Widget physics() {
               title: 'Electrización',
               img: AssetImage('assets/icons/physics/enchufe.png'),
               pdfRoute: 'assets/pdf/Physics/electrizacion.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bFiVDoRK4XB83D4uE2yUg81',
             ),
             ContentArguments(
               title: 'Ley de Ohm',
               img: AssetImage('assets/icons/physics/ohm.png'),
               pdfRoute: 'assets/pdf/Physics/ohm.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bH33v8t5erXTu6QAOkjpaZn',
             ),
             ContentArguments(
               title: 'Ley de Coulomb',
               img: AssetImage('assets/icons/physics/coulomb.png'),
               pdfRoute: 'assets/pdf/Physics/coulomb.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bG0Jxe2JwTORpfcIRoXENqi',
             ),
             ContentArguments(
               title: 'Ley de Watt',
               img: AssetImage('assets/icons/physics/ammeter.png'),
               pdfRoute: 'assets/pdf/Physics/watt.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bGam_2NXmnzQlEYJgNI8lj-',
             ),
             ContentArguments(
               title: 'Magnetismo',
               img: AssetImage('assets/icons/physics/magnetismo.png'),
               pdfRoute: 'assets/pdf/Physics/magnetismo.pdf',
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bG6i_Th2OvbV42mGOGecwKE',
             ),
           ],
         ),
