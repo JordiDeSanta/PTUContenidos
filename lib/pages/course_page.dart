@@ -46,6 +46,16 @@ class _CoursePageState extends State<CoursePage> {
         centerTitle: true,
         toolbarHeight: h * 0.1,
         backgroundColor: settings.courseColor,
+        actions: [
+          IconButton(
+            onPressed: () =>
+                Navigator.pushNamed(context, 'content', arguments: [
+              ContentArguments(title: 'Pauta', pdfRoute: settings.pRoute),
+              settings.buttonsColor,
+            ]),
+            icon: Icon(Icons.book),
+          ),
+        ],
       ),
       backgroundColor: Colors.white,
       body: ListView(

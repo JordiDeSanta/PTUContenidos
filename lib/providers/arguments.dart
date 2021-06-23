@@ -4,6 +4,7 @@ class CourseArguments {
   String title;
   Color courseColor;
   Color buttonsColor;
+  String pRoute;
   ImageProvider img;
   List<ThemeArguments> themes;
 
@@ -13,6 +14,7 @@ class CourseArguments {
     this.buttonsColor,
     this.img,
     this.themes,
+    this.pRoute,
   });
 }
 

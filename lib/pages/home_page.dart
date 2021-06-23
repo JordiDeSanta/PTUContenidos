@@ -72,6 +72,7 @@ class _HomePageState extends State<HomePage> {
 Widget biology() {
   return CourseButton(
     CourseArguments(
+      pRoute: 'assets/pdf/Biology/pauta.pdf',
       img: AssetImage('assets/icons/biology.png'),
       buttonsColor: Colors.greenAccent,
       courseColor: Colors.greenAccent[400],
@@ -275,6 +276,7 @@ Widget biology() {
 Widget physics() {
   return CourseButton(
     CourseArguments(
+      pRoute: 'assets/pdf/Physics/pauta.pdf',
       img: AssetImage('assets/icons/physics.png'),
       buttonsColor: Colors.purpleAccent[400],
       courseColor: Colors.purpleAccent,
@@ -513,6 +515,7 @@ Widget physics() {
 Widget chemistry() {
   return CourseButton(
     CourseArguments(
+      pRoute: 'assets/pdf/Chemistry/pauta.pdf',
       img: AssetImage('assets/icons/chemistry.png'),
       buttonsColor: Colors.lightGreen[400],
       courseColor: Colors.lightGreen,
