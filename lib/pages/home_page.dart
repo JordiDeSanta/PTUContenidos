@@ -485,13 +485,13 @@ Widget physics() {
             ),
             ContentArguments(
               title: 'Ley de Watt',
-              img: AssetImage('assets/icons/physics/power.png'),
-              pdfRoute: '',
+              img: AssetImage('assets/icons/physics/ammeter.png'),
+              pdfRoute: 'assets/pdf/Physics/watt.pdf',
             ),
             ContentArguments(
               title: 'Magnetismo',
               img: AssetImage('assets/icons/physics/magnetismo.png'),
-              pdfRoute: '',
+              pdfRoute: 'assets/pdf/Physics/magnetismo.pdf',
             ),
           ],
         ),
