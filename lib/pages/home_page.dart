@@ -601,6 +601,8 @@ Widget chemistry() {
               title: 'Nomenclatura de Orgánicos',
               img: AssetImage("assets/icons/chemistry/nom.png"),
               pdfRoute: "assets/pdf/Chemistry/organicos.pdf",
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bFKCvwEm7IGQwx8IibjCG3z',
             ),
           ],
         ),
@@ -612,41 +614,57 @@ Widget chemistry() {
               title: 'Gases',
               img: AssetImage("assets/icons/chemistry/gas.png"),
               pdfRoute: "assets/pdf/Chemistry/gases.pdf",
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bElSNo7venSUrlYO33J2RxD',
             ),
             ContentArguments(
               title: 'Conceptos Moleculares',
               img: AssetImage("assets/icons/chemistry/water.png"),
               pdfRoute: "assets/pdf/Chemistry/moleculares.pdf",
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bGTizuWSL-U_8YbtpHBjyf_',
             ),
             ContentArguments(
               title: 'Química Cuantitativa',
               img: AssetImage("assets/icons/chemistry/inorganic.png"),
               pdfRoute: "assets/pdf/Chemistry/cuantitativa.pdf",
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bFSqfHjwGGsB7pQQReAlirk',
             ),
             ContentArguments(
               title: 'Leyes Químicas',
               img: AssetImage("assets/icons/chemistry/leyes.png"),
               pdfRoute: "assets/pdf/Chemistry/leyes.pdf",
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bH5kxMl0xZ-lSTCpHNVoAiR',
             ),
             ContentArguments(
               title: 'Análisis Porcentual',
               img: AssetImage("assets/icons/chemistry/percentage.png"),
               pdfRoute: "assets/pdf/Chemistry/porcentual.pdf",
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bHTDwC34FjNe5UhNS-2wKHh',
             ),
             ContentArguments(
               title: 'Reactivo Limitante',
               img: AssetImage("assets/icons/chemistry/sol.png"),
               pdfRoute: "assets/pdf/Chemistry/reactivos.pdf",
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bHYrKPIss0qjj9tqVSVdm6n',
             ),
             ContentArguments(
               title: 'Soluciones',
               img: AssetImage("assets/icons/chemistry/flask.png"),
               pdfRoute: "assets/pdf/Chemistry/soluciones.pdf",
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bGAvYHIlHpPRkXwnJhBayZA',
             ),
             ContentArguments(
               title: 'Concentraciones',
               img: AssetImage("assets/icons/chemistry/concentracion.png"),
               pdfRoute: "assets/pdf/Chemistry/concentracion.pdf",
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bGZCjQa0cSY8BEYWbYAoWww',
             ),
           ],
         ),
