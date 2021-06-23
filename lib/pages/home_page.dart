@@ -526,36 +526,49 @@ Widget chemistry() {
               title: 'La Materia',
               img: AssetImage("assets/icons/chemistry/mezcla.png"),
               pdfRoute: "assets/pdf/Chemistry/materia.pdf",
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bFCrgafDIh6JpcEHn5AQ6e9',
             ),
             ContentArguments(
               title: 'Cambios en la Materia',
               img: AssetImage("assets/icons/chemistry/procesos.png"),
               pdfRoute: "assets/pdf/Chemistry/procesos.pdf",
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bFXoV3_Cxiw6ULHUun-4Y26',
             ),
             ContentArguments(
               title: 'Modelos Atómicos',
               img: AssetImage("assets/icons/chemistry/atom.png"),
               pdfRoute: "assets/pdf/Chemistry/modelos.pdf",
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bHyXZux6H-BgWiOMt-ql50z',
             ),
             ContentArguments(
               title: 'Conceptos Preliminares',
               img: AssetImage("assets/icons/chemistry/bioquimico.png"),
               pdfRoute: "assets/pdf/Chemistry/conceptos.pdf",
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bFPA1Z5ATvCqDNqHIqWAJYi',
             ),
             ContentArguments(
               title: 'Sistema Periódico',
               img: AssetImage("assets/icons/chemistry/pt.png"),
               pdfRoute: "assets/pdf/Chemistry/sistema.pdf",
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bEYbyA2DYp2gLl6mN5Rgd0M',
             ),
             ContentArguments(
-              title: 'Enlaces Químicos',
-              img: AssetImage("assets/icons/chemistry/molecular.png"),
-              pdfRoute: "assets/pdf/Chemistry/enlaces.pdf",
-            ),
+                title: 'Enlaces Químicos',
+                img: AssetImage("assets/icons/chemistry/molecular.png"),
+                pdfRoute: "assets/pdf/Chemistry/enlaces.pdf",
+                vidUrl:
+                    'https://www.youtube.com/playlist?list=PLcuHdQcnp6bGhoaxrujPTtr-vrjMFpYJS'),
             ContentArguments(
               title: 'Estructura de Lewis',
               img: AssetImage("assets/icons/chemistry/lewis.png"),
               pdfRoute: "assets/pdf/Chemistry/lewis.pdf",
+              vidUrl:
+                  'https://www.youtube.com/playlist?list=PLcuHdQcnp6bGBOAKuMUd0dRT2iIR8kxTW',
             ),
           ],
         ),
