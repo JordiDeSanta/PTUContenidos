@@ -7,6 +7,7 @@ class CourseArguments {
   String pRoute;
   ImageProvider img;
   List<ThemeArguments> themes;
+  String creatorLink;
 
   CourseArguments({
     this.title,
@@ -15,6 +16,7 @@ class CourseArguments {
     this.img,
     this.themes,
     this.pRoute,
+    this.creatorLink,
   });
 }
 

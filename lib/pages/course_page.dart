@@ -5,6 +5,7 @@ import 'package:ptucontenidos/providers/ad_state.dart';
 import 'package:ptucontenidos/providers/arguments.dart';
 import 'package:ptucontenidos/utils/texts.dart';
 import 'package:ptucontenidos/widgets/theme_button.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class CoursePage extends StatefulWidget {
   CoursePage();
@@ -48,11 +49,20 @@ class _CoursePageState extends State<CoursePage> {
         backgroundColor: settings.courseColor,
         actions: [
           IconButton(
-            onPressed: () =>
-                Navigator.pushNamed(context, 'content', arguments: [
-              ContentArguments(title: 'Pauta', pdfRoute: settings.pRoute),
-              settings.buttonsColor,
-            ]),
+            onPressed: () {
+              _launchURL(settings.creatorLink);
+            },
+            icon: Icon(Icons.person),
+          ),
+          IconButton(
+            onPressed: () => Navigator.pushNamed(
+              context,
+              'content',
+              arguments: [
+                ContentArguments(title: 'Pauta', pdfRoute: settings.pRoute),
+                settings.buttonsColor,
+              ],
+            ),
             icon: Icon(Icons.book),
           ),
         ],
@@ -103,4 +113,8 @@ class _CoursePageState extends State<CoursePage> {
       ),
     );
   }
+}
+
+void _launchURL(String url) async {
+  await canLaunch(url) ? await launch(url) : throw 'Could not launch $url';
 }

@@ -50,10 +50,6 @@ class _HomePageState extends State<HomePage> {
       body: ListView(
         children: [
           SizedBox(height: 5),
-          biology(),
-          physics(),
-          chemistry(),
-          fButton(context, styles),
           if (banner == null)
             Container()
           else
@@ -63,6 +59,11 @@ class _HomePageState extends State<HomePage> {
                 ad: banner,
               ),
             ),
+          biology(),
+          physics(),
+          chemistry(),
+          history(),
+          fButton(context, styles),
         ],
       ),
     );
@@ -72,6 +73,7 @@ class _HomePageState extends State<HomePage> {
 Widget biology() {
   return CourseButton(
     CourseArguments(
+      creatorLink: 'https://www.instagram.com/jord1dev/?hl=es-la',
       pRoute: 'assets/pdf/Biology/pauta.pdf',
       img: AssetImage('assets/icons/biology.png'),
       buttonsColor: Colors.greenAccent,
@@ -276,6 +278,7 @@ Widget biology() {
 Widget physics() {
   return CourseButton(
     CourseArguments(
+      creatorLink: 'https://www.instagram.com/jord1dev/?hl=es-la',
       pRoute: 'assets/pdf/Physics/pauta.pdf',
       img: AssetImage('assets/icons/physics.png'),
       buttonsColor: Colors.purpleAccent[400],
@@ -515,6 +518,7 @@ Widget physics() {
 Widget chemistry() {
   return CourseButton(
     CourseArguments(
+      creatorLink: 'https://www.instagram.com/jord1dev/?hl=es-la',
       pRoute: 'assets/pdf/Chemistry/pauta.pdf',
       img: AssetImage('assets/icons/chemistry.png'),
       buttonsColor: Colors.lightGreen[400],
@@ -668,6 +672,80 @@ Widget chemistry() {
               pdfRoute: "assets/pdf/Chemistry/concentracion.pdf",
               vidUrl:
                   'https://www.youtube.com/playlist?list=PLcuHdQcnp6bGZCjQa0cSY8BEYWbYAoWww',
+            ),
+          ],
+        ),
+      ],
+    ),
+  );
+}
+
+Widget history() {
+  return CourseButton(
+    CourseArguments(
+      creatorLink: 'https://www.instagram.com/study.catam/?hl=es-la',
+      pRoute: 'assets/pdf/Biology/pauta.pdf',
+      img: AssetImage('assets/icons/history.png'),
+      buttonsColor: Colors.yellowAccent[400],
+      courseColor: Colors.yellowAccent[700],
+      title: "Historia",
+      themes: <ThemeArguments>[
+        ThemeArguments(
+          title: 'Cambio del siglo XIX en Europa, América y Chile',
+          img: AssetImage('assets/img/his1.jpg'),
+          contents: <ContentArguments>[
+            ContentArguments(
+              title: 'Ideas Liberales y Republicanas',
+              img: AssetImage("assets/icons/history/idea.png"),
+              pdfRoute: "assets/pdf/History/ideas.pdf",
+            ),
+            ContentArguments(
+              title: 'Cultura Burguesa',
+              img: AssetImage("assets/icons/history/bur.png"),
+              pdfRoute: "assets/pdf/History/burgues.pdf",
+            ),
+            ContentArguments(
+              title: 'Impacto del Estado Nación',
+              img: AssetImage("assets/icons/history/bur.png"),
+              pdfRoute: "assets/pdf/History/burgues.pdf",
+            ),
+            ContentArguments(
+              title: 'Progreso Indefinido',
+              img: AssetImage("assets/icons/history/bur.png"),
+              pdfRoute: "assets/pdf/History/burgues.pdf",
+            ),
+          ],
+        ),
+        ThemeArguments(
+          title: 'Chile durante el Siglo XIX',
+          img: AssetImage('assets/img/his2.jpg'),
+          contents: <ContentArguments>[
+            ContentArguments(
+              title: 'La Materia',
+              img: AssetImage("assets/icons/chemistry/mezcla.png"),
+              pdfRoute: "assets/pdf/Chemistry/materia.pdf",
+            ),
+          ],
+        ),
+        ThemeArguments(
+          title: 'Primera Mitad del Siglo XX',
+          img: AssetImage('assets/img/his3.jpeg'),
+          contents: <ContentArguments>[
+            ContentArguments(
+              title: 'La Materia',
+              img: AssetImage("assets/icons/chemistry/mezcla.png"),
+              pdfRoute: "assets/pdf/Chemistry/materia.pdf",
+            ),
+          ],
+        ),
+        ThemeArguments(
+          title: 'Segunda Mitad del Siglo XX',
+          img: AssetImage('assets/img/his4.jpg'),
+          contents: <ContentArguments>[
+            ContentArguments(
+              title: 'La Materia',
+              img: AssetImage("assets/icons/chemistry/mezcla.png"),
+              pdfRoute: "assets/pdf/Chemistry/materia.pdf",
             ),
           ],
         ),

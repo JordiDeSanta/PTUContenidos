@@ -64,9 +64,11 @@ flutter:
     - assets/icons/biology/
     - assets/icons/chemistry/
     - assets/icons/physics/
+    - assets/icons/history/
     - assets/pdf/Biology/
     - assets/pdf/Chemistry/
     - assets/pdf/Physics/
+    - assets/pdf/History/
     
   fonts:
     - family: Louis
