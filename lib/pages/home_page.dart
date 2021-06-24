@@ -684,7 +684,7 @@ Widget history() {
   return CourseButton(
     CourseArguments(
       creatorLink: 'https://www.instagram.com/study.catam/?hl=es-la',
-      pRoute: 'assets/pdf/Biology/pauta.pdf',
+      pRoute: 'assets/pdf/History/pauta.pdf',
       img: AssetImage('assets/icons/history.png'),
       buttonsColor: Colors.yellowAccent[400],
       courseColor: Colors.yellowAccent[700],
