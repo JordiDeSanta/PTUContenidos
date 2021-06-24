@@ -706,13 +706,18 @@ Widget history() {
             ),
             ContentArguments(
               title: 'Impacto del Estado Nación',
-              img: AssetImage("assets/icons/history/bur.png"),
-              pdfRoute: "assets/pdf/History/burgues.pdf",
+              img: AssetImage("assets/icons/history/estado.png"),
+              pdfRoute: "assets/pdf/History/estadonacion.pdf",
             ),
             ContentArguments(
               title: 'Progreso Indefinido',
-              img: AssetImage("assets/icons/history/bur.png"),
-              pdfRoute: "assets/pdf/History/burgues.pdf",
+              img: AssetImage("assets/icons/history/progreso.png"),
+              pdfRoute: "assets/pdf/History/progreso.pdf",
+            ),
+            ContentArguments(
+              title: 'Imperialismo',
+              img: AssetImage("assets/icons/history/trono.png"),
+              pdfRoute: "assets/pdf/History/imperialismo.pdf",
             ),
           ],
         ),
@@ -721,9 +726,24 @@ Widget history() {
           img: AssetImage('assets/img/his2.jpg'),
           contents: <ContentArguments>[
             ContentArguments(
-              title: 'La Materia',
-              img: AssetImage("assets/icons/chemistry/mezcla.png"),
-              pdfRoute: "assets/pdf/Chemistry/materia.pdf",
+              title: 'Chile',
+              img: AssetImage("assets/icons/history/chile.png"),
+              pdfRoute: "assets/pdf/History/chile.pdf",
+            ),
+            ContentArguments(
+              title: 'Territorio Chileno',
+              img: AssetImage("assets/icons/history/territorio.png"),
+              pdfRoute: "assets/pdf/History/territorio.pdf",
+            ),
+            ContentArguments(
+              title: 'Política Chilena',
+              img: AssetImage("assets/icons/history/politica.png"),
+              pdfRoute: "assets/pdf/History/politica.pdf",
+            ),
+            ContentArguments(
+              title: 'Auge Salitrero',
+              img: AssetImage("assets/icons/history/salitre.png"),
+              pdfRoute: "assets/pdf/History/salitre.pdf",
             ),
           ],
         ),
@@ -732,9 +752,29 @@ Widget history() {
           img: AssetImage('assets/img/his3.jpeg'),
           contents: <ContentArguments>[
             ContentArguments(
-              title: 'La Materia',
-              img: AssetImage("assets/icons/chemistry/mezcla.png"),
-              pdfRoute: "assets/pdf/Chemistry/materia.pdf",
+              title: 'Impacto de la Primera Guerra Mundial',
+              img: AssetImage("assets/icons/history/primera.png"),
+              pdfRoute: "assets/pdf/History/primera.pdf",
+            ),
+            ContentArguments(
+              title: 'Periodo Entreguerras',
+              img: AssetImage("assets/icons/history/entre.png"),
+              pdfRoute: "assets/pdf/History/entre.pdf",
+            ),
+            ContentArguments(
+              title: 'Crisis del Parlamentarismo',
+              img: AssetImage("assets/icons/history/parlamentarismo.png"),
+              pdfRoute: "assets/pdf/History/parlamentarismo.pdf",
+            ),
+            ContentArguments(
+              title: 'Gran Depresión',
+              img: AssetImage("assets/icons/history/depresion.png"),
+              pdfRoute: "assets/pdf/History/depresion.pdf",
+            ),
+            ContentArguments(
+              title: 'Segunda Guerra Mundial',
+              img: AssetImage("assets/icons/history/segunda.png"),
+              pdfRoute: "assets/pdf/History/segunda.pdf",
             ),
           ],
         ),
@@ -743,9 +783,14 @@ Widget history() {
           img: AssetImage('assets/img/his4.jpg'),
           contents: <ContentArguments>[
             ContentArguments(
-              title: 'La Materia',
-              img: AssetImage("assets/icons/chemistry/mezcla.png"),
-              pdfRoute: "assets/pdf/Chemistry/materia.pdf",
+              title: 'Guerra Fría',
+              img: AssetImage("assets/icons/history/fria.png"),
+              pdfRoute: "assets/pdf/History/fria.pdf",
+            ),
+            ContentArguments(
+              title: 'En América Latina',
+              img: AssetImage("assets/icons/history/latino.png"),
+              pdfRoute: "assets/pdf/History/latin.pdf",
             ),
           ],
         ),
