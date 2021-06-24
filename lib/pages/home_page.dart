@@ -788,9 +788,24 @@ Widget history() {
               pdfRoute: "assets/pdf/History/fria.pdf",
             ),
             ContentArguments(
-              title: 'En América Latina',
+              title: 'Guerra Fría en América Latina',
               img: AssetImage("assets/icons/history/latino.png"),
               pdfRoute: "assets/pdf/History/latin.pdf",
+            ),
+            ContentArguments(
+              title: 'Guerra Fría en Chile',
+              img: AssetImage("assets/icons/history/chile.png"),
+              pdfRoute: "assets/pdf/History/chilegf.pdf",
+            ),
+            ContentArguments(
+              title: 'Fin de la Guerra Fría',
+              img: AssetImage("assets/icons/history/fin.png"),
+              pdfRoute: "assets/pdf/History/fin.pdf",
+            ),
+            ContentArguments(
+              title: 'Golpe de Estado',
+              img: AssetImage("assets/icons/history/dictadura.png"),
+              pdfRoute: "assets/pdf/History/golpe.pdf",
             ),
           ],
         ),
