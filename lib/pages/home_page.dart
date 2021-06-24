@@ -805,7 +805,12 @@ Widget history() {
             ContentArguments(
               title: 'Golpe de Estado',
               img: AssetImage("assets/icons/history/dictadura.png"),
-              pdfRoute: "assets/pdf/History/golpe.pdf",
+              pdfRoute: "assets/pdf/History/golpe1.pdf",
+            ),
+            ContentArguments(
+              title: 'Regreso a la Democracia',
+              img: AssetImage("assets/icons/history/votar.png"),
+              pdfRoute: "assets/pdf/History/golpe2.pdf",
             ),
           ],
         ),
