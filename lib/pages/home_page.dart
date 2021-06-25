@@ -63,7 +63,22 @@ class _HomePageState extends State<HomePage> {
           physics(),
           chemistry(),
           history(),
-          fButton(context, styles),
+          fButton(
+            context,
+            styles,
+            Colors.brown[300],
+            'assets/icons/logoF.png',
+            'https://play.google.com/store/apps/details?id=com.jordidev.ptuformulas',
+            'Fórmulas',
+          ),
+          fButton(
+            context,
+            styles,
+            Colors.orange[200],
+            'assets/icons/logo.png',
+            'https://play.google.com/store/apps/details?id=com.jordidev.ptucontenidos',
+            'Dános 🌟',
+          ),
         ],
       ),
     );
@@ -819,7 +834,8 @@ Widget history() {
   );
 }
 
-Widget fButton(BuildContext context, TextStyles styles) {
+Widget fButton(BuildContext context, TextStyles styles, Color c, String r,
+    String u, String t) {
   double size = MediaQuery.of(context).size.aspectRatio;
 
   return Padding(
@@ -832,7 +848,7 @@ Widget fButton(BuildContext context, TextStyles styles) {
             borderRadius: BorderRadius.circular(20.0),
           ),
         ),
-        backgroundColor: MaterialStateProperty.all(Colors.brown[300]),
+        backgroundColor: MaterialStateProperty.all(c),
       ),
       child: Container(
         padding: EdgeInsets.symmetric(vertical: size * 40),
@@ -841,14 +857,14 @@ Widget fButton(BuildContext context, TextStyles styles) {
           children: [
             Image(
               height: size * 180,
-              image: AssetImage('assets/icons/logoF.png'),
+              image: AssetImage(r),
               fit: BoxFit.cover,
             ),
             Container(
               padding: EdgeInsets.only(left: size * 40),
               width: size * 400,
               child: Text(
-                'Fórmulas',
+                t,
                 style: styles.getTitle(context),
                 overflow: TextOverflow.ellipsis,
               ),
@@ -856,13 +872,13 @@ Widget fButton(BuildContext context, TextStyles styles) {
           ],
         ),
       ),
-      onPressed: _launchURL,
+      onPressed: () {
+        _launchURL(u);
+      },
     ),
   );
 }
 
-void _launchURL() async {
-  final _url =
-      'https://play.google.com/store/apps/details?id=com.jordidev.ptuformulas';
-  await canLaunch(_url) ? await launch(_url) : throw 'Could not launch $_url';
+void _launchURL(String url) async {
+  await canLaunch(url) ? await launch(url) : throw 'Could not launch $url';
 }
