@@ -14,6 +14,7 @@ class ContentButton extends StatelessWidget {
   Widget build(BuildContext context) {
     double size = MediaQuery.of(context).size.aspectRatio;
     double h = MediaQuery.of(context).size.height;
+    double w = MediaQuery.of(context).size.width;
 
     return Container(
       padding: EdgeInsets.all(5),
@@ -35,7 +36,7 @@ class ContentButton extends StatelessWidget {
         child: Row(
           children: [
             Container(
-              width: size * 450,
+              width: w * 0.65,
               padding: EdgeInsets.all(15),
               child: Text(
                 settings.title,
@@ -46,6 +47,7 @@ class ContentButton extends StatelessWidget {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(20),
                 child: Image(
+                  width: w * 0.02,
                   image: settings.img,
                   fit: BoxFit.cover,
                 ),

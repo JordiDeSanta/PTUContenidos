@@ -12,6 +12,7 @@ class CourseButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double size = MediaQuery.of(context).size.aspectRatio;
+    double w = MediaQuery.of(context).size.width;
 
     return Padding(
       padding: EdgeInsets.symmetric(vertical: size * 18, horizontal: size * 10),
@@ -37,7 +38,7 @@ class CourseButton extends StatelessWidget {
               ),
               Container(
                 padding: EdgeInsets.only(left: size * 40),
-                width: size * 400,
+                width: w * 0.6,
                 child: Text(
                   settings.title,
                   style: styles.getTitle(context),
