@@ -21,34 +21,28 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
+  cupertino_icons: ^1.0.2
   flutter:
     sdk: flutter
-  pdf_render: ^1.0.11
   google_mobile_ads: ^0.12.1+1
   provider: ^5.0.0
+  syncfusion_flutter_pdfviewer: ^19.2.55-beta
   url_launcher: ^6.0.6
 
-
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.2
-
 dev_dependencies:
+  flutter_launcher_icons: ^0.9.0
   flutter_test:
     sdk: flutter
 
-  flutter_launcher_icons: ^0.9.0
-
 flutter_icons:
- android: "launcher_icon"
- ios: true
- remove_alpha_ios: true
- image_path: "assets/icons/logo.png"
- adaptive_icon_background: "assets/icons/logo.png"
+  android: "launcher_icon"
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/icons/logo.png"
+  adaptive_icon_background: "assets/icons/logo.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
-
 # The following section is specific to Flutter.
 flutter:
 
@@ -69,12 +63,11 @@ flutter:
     - assets/pdf/Chemistry/
     - assets/pdf/Physics/
     - assets/pdf/History/
-    
+
   fonts:
     - family: Louis
       fonts:
         - asset: assets/fonts/Louis.ttf
-
   # example:
   # fonts:
   #   - family: Schyler

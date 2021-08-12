@@ -47,9 +47,8 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.black38,
       ),
       backgroundColor: Colors.white,
-      body: ListView(
+      bottomSheet: Stack(
         children: [
-          SizedBox(height: 5),
           if (banner == null)
             Container()
           else
@@ -59,6 +58,11 @@ class _HomePageState extends State<HomePage> {
                 ad: banner,
               ),
             ),
+        ],
+      ),
+      body: ListView(
+        children: [
+          SizedBox(height: 5),
           biology(),
           physics(),
           chemistry(),

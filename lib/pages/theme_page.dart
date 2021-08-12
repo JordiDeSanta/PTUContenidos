@@ -54,23 +54,26 @@ class _ThemePageState extends State<ThemePage> {
       body: ListView(
         children: createButtons(theme, color),
       ),
+      bottomSheet: Stack(
+        children: [
+          if (banner == null)
+            Container()
+          else
+            Container(
+              height: h * 0.35,
+              child: AdWidget(
+                ad: banner,
+              ),
+            ),
+        ],
+      ),
     );
   }
 
   List<Widget> createButtons(ThemeArguments args, Color c) {
     double h = MediaQuery.of(context).size.height;
 
-    List<Widget> buttons = [
-      if (banner == null)
-        Container()
-      else
-        Container(
-          height: h * 0.4,
-          child: AdWidget(
-            ad: banner,
-          ),
-        ),
-    ];
+    List<Widget> buttons = [];
 
     args.contents.forEach(
       (e) {
@@ -78,6 +81,8 @@ class _ThemePageState extends State<ThemePage> {
         buttons.add(_temp);
       },
     );
+
+    buttons.add(SizedBox(height: h * 0.5));
 
     return buttons;
   }

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:pdf_render/pdf_render_widgets.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
+import 'package:provider/provider.dart';
+import 'package:ptucontenidos/providers/ad_state.dart';
 import 'package:ptucontenidos/providers/arguments.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -9,12 +12,22 @@ class PDFPage extends StatefulWidget {
 }
 
 class _PDFPageState extends State<PDFPage> {
-  final controller = PdfViewerController();
+  BannerAd banner;
 
   @override
-  void dispose() {
-    controller.dispose();
-    super.dispose();
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    final adState = Provider.of<AdState>(context);
+    adState.initialization.then((status) {
+      setState(() {
+        banner = BannerAd(
+          adUnitId: adState.bannerAdUnitId,
+          size: AdSize.banner,
+          request: AdRequest(),
+          listener: adState.adListener,
+        )..load();
+      });
+    });
   }
 
   @override
@@ -23,6 +36,7 @@ class _PDFPageState extends State<PDFPage> {
     final ContentArguments content = settings[0];
     final Color color = settings[1];
     double size = MediaQuery.of(context).size.aspectRatio;
+    double h = MediaQuery.of(context).size.height;
 
     return Scaffold(
       appBar: new AppBar(
@@ -38,28 +52,18 @@ class _PDFPageState extends State<PDFPage> {
         ],
       ),
       backgroundColor: Colors.grey,
-      body: PdfViewer.openAsset(
-        content.pdfRoute,
-        viewerController: controller,
-        onError: (err) => print(err),
-        params: PdfViewerParams(
-          padding: 5,
-          minScale: 1.0,
-        ),
-      ),
-      floatingActionButton: Column(
-        mainAxisAlignment: MainAxisAlignment.end,
-        children: <Widget>[
-          FloatingActionButton(
-            child: Icon(Icons.first_page),
-            onPressed: () => controller.ready?.goToPage(pageNumber: 1),
-          ),
-          SizedBox(height: 5),
-          FloatingActionButton(
-            child: Icon(Icons.last_page),
-            onPressed: () =>
-                controller.ready?.goToPage(pageNumber: controller.pageCount),
-          ),
+      body: Container(child: SfPdfViewer.asset(content.pdfRoute)),
+      bottomSheet: Stack(
+        children: [
+          if (banner == null)
+            Container()
+          else
+            Container(
+              height: h * 0.1,
+              child: AdWidget(
+                ad: banner,
+              ),
+            ),
         ],
       ),
     );
