@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:sciencenotes/providers/ad_state.dart';
+import 'package:sciencenotes/providers/arguments.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 import 'package:provider/provider.dart';
-import 'package:ptucontenidos/providers/ad_state.dart';
-import 'package:ptucontenidos/providers/arguments.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class PDFPage extends StatefulWidget {
@@ -12,7 +12,7 @@ class PDFPage extends StatefulWidget {
 }
 
 class _PDFPageState extends State<PDFPage> {
-  BannerAd banner;
+  BannerAd? banner;
 
   @override
   void didChangeDependencies() {
@@ -32,7 +32,7 @@ class _PDFPageState extends State<PDFPage> {
 
   @override
   Widget build(BuildContext context) {
-    final List settings = ModalRoute.of(context).settings.arguments;
+    final settings = ModalRoute.of(context)?.settings.arguments as List;
     final ContentArguments content = settings[0];
     final Color color = settings[1];
     double size = MediaQuery.of(context).size.aspectRatio;
@@ -40,7 +40,7 @@ class _PDFPageState extends State<PDFPage> {
 
     return Scaffold(
       appBar: new AppBar(
-        title: Text(content.title),
+        title: Text(content.title!),
         backgroundColor: color,
         toolbarHeight: size * 140,
         centerTitle: true,
@@ -52,7 +52,7 @@ class _PDFPageState extends State<PDFPage> {
         ],
       ),
       backgroundColor: Colors.grey,
-      body: Container(child: SfPdfViewer.asset(content.pdfRoute)),
+      body: Container(child: SfPdfViewer.asset(content.pdfRoute!)),
       bottomSheet: Stack(
         children: [
           if (banner == null)
@@ -61,7 +61,7 @@ class _PDFPageState extends State<PDFPage> {
             Container(
               height: h * 0.1,
               child: AdWidget(
-                ad: banner,
+                ad: banner!,
               ),
             ),
         ],
@@ -71,6 +71,8 @@ class _PDFPageState extends State<PDFPage> {
 
   void _launchURL(ContentArguments c) async {
     final _url = c.vidUrl;
-    await canLaunch(_url) ? await launch(_url) : throw 'Could not launch $_url';
+    await canLaunch(_url!)
+        ? await launch(_url)
+        : throw 'Could not launch $_url';
   }
 }

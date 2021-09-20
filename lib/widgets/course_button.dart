@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ptucontenidos/providers/arguments.dart';
-import 'package:ptucontenidos/utils/texts.dart';
+import 'package:sciencenotes/providers/arguments.dart';
+import 'package:sciencenotes/utils/texts.dart';
 
 class CourseButton extends StatelessWidget {
   final CourseArguments settings;
@@ -33,14 +33,14 @@ class CourseButton extends StatelessWidget {
             children: [
               Image(
                 height: size * 180,
-                image: settings.img,
+                image: settings.img!,
                 fit: BoxFit.cover,
               ),
               Container(
                 padding: EdgeInsets.only(left: size * 40),
                 width: w * 0.6,
                 child: Text(
-                  settings.title,
+                  settings.title!,
                   style: styles.getTitle(context),
                   overflow: TextOverflow.ellipsis,
                 ),

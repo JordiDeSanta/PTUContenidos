@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:ptucontenidos/providers/arguments.dart';
-import 'package:ptucontenidos/utils/texts.dart';
+import 'package:sciencenotes/providers/arguments.dart';
+import 'package:sciencenotes/utils/texts.dart';
 
 class ThemeButton extends StatelessWidget {
   final ThemeArguments settings;
   final Color color;
 
-  ThemeButton({this.settings, this.color});
+  ThemeButton({required this.settings, required this.color});
 
   final styles = TextStyles();
 
@@ -36,7 +36,7 @@ class ThemeButton extends StatelessWidget {
             Container(
               padding: EdgeInsets.all(10),
               child: Text(
-                settings.title,
+                settings.title!,
                 style: styles.getSubtitle(context),
               ),
             ),
@@ -44,7 +44,7 @@ class ThemeButton extends StatelessWidget {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(20),
                 child: Image(
-                  image: settings.img,
+                  image: settings.img!,
                   fit: BoxFit.cover,
                 ),
               ),

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:provider/provider.dart';
-import 'package:ptucontenidos/providers/ad_state.dart';
-import 'package:ptucontenidos/providers/arguments.dart';
-import 'package:ptucontenidos/utils/texts.dart';
-import 'package:ptucontenidos/widgets/content_button.dart';
+import 'package:sciencenotes/providers/ad_state.dart';
+import 'package:sciencenotes/providers/arguments.dart';
+import 'package:sciencenotes/utils/texts.dart';
+import 'package:sciencenotes/widgets/content_button.dart';
 
 class ThemePage extends StatefulWidget {
   ThemePage();
@@ -16,7 +16,7 @@ class ThemePage extends StatefulWidget {
 class _ThemePageState extends State<ThemePage> {
   final styles = TextStyles();
 
-  BannerAd banner;
+  BannerAd? banner;
 
   @override
   void didChangeDependencies() {
@@ -36,7 +36,7 @@ class _ThemePageState extends State<ThemePage> {
 
   @override
   Widget build(BuildContext context) {
-    final List settings = ModalRoute.of(context).settings.arguments;
+    final settings = ModalRoute.of(context)?.settings.arguments as List;
     final ThemeArguments theme = settings[0];
     final Color color = settings[1];
     double size = MediaQuery.of(context).size.aspectRatio;
@@ -45,7 +45,7 @@ class _ThemePageState extends State<ThemePage> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0.0,
-        title: Text(theme.title, style: styles.getSubtitle(context)),
+        title: Text(theme.title!, style: styles.getSubtitle(context)),
         centerTitle: true,
         toolbarHeight: h * 0.1,
         backgroundColor: color,
@@ -62,7 +62,7 @@ class _ThemePageState extends State<ThemePage> {
             Container(
               height: h * 0.35,
               child: AdWidget(
-                ad: banner,
+                ad: banner!,
               ),
             ),
         ],
@@ -75,7 +75,7 @@ class _ThemePageState extends State<ThemePage> {
 
     List<Widget> buttons = [];
 
-    args.contents.forEach(
+    args.contents?.forEach(
       (e) {
         Widget _temp = ContentButton(settings: e, color: c);
         buttons.add(_temp);

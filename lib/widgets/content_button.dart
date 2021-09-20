@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:ptucontenidos/providers/arguments.dart';
-import 'package:ptucontenidos/utils/texts.dart';
+import 'package:sciencenotes/providers/arguments.dart';
+import 'package:sciencenotes/utils/texts.dart';
 
 class ContentButton extends StatelessWidget {
   final ContentArguments settings;
   final Color color;
 
-  ContentButton({this.settings, this.color});
+  ContentButton({required this.settings, required this.color});
 
   final styles = TextStyles();
 
@@ -39,7 +39,7 @@ class ContentButton extends StatelessWidget {
               width: w * 0.65,
               padding: EdgeInsets.all(15),
               child: Text(
-                settings.title,
+                settings.title!,
                 style: styles.getSubtitle(context),
               ),
             ),
@@ -48,7 +48,7 @@ class ContentButton extends StatelessWidget {
                 borderRadius: BorderRadius.circular(20),
                 child: Image(
                   width: w * 0.02,
-                  image: settings.img,
+                  image: settings.img!,
                   fit: BoxFit.cover,
                 ),
               ),

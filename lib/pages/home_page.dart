@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:provider/provider.dart';
-import 'package:ptucontenidos/providers/ad_state.dart';
-import 'package:ptucontenidos/providers/arguments.dart';
-import 'package:ptucontenidos/utils/texts.dart';
-import 'package:ptucontenidos/widgets/course_button.dart';
+import 'package:sciencenotes/providers/ad_state.dart';
+import 'package:sciencenotes/providers/arguments.dart';
+import 'package:sciencenotes/utils/texts.dart';
+import 'package:sciencenotes/widgets/course_button.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class HomePage extends StatefulWidget {
-  HomePage({Key key}) : super(key: key);
-
   @override
   _HomePageState createState() => _HomePageState();
 }
@@ -17,7 +15,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final styles = TextStyles();
 
-  BannerAd banner;
+  BannerAd? banner;
 
   @override
   void didChangeDependencies() {
@@ -55,7 +53,7 @@ class _HomePageState extends State<HomePage> {
             Container(
               height: h * 0.2,
               child: AdWidget(
-                ad: banner,
+                ad: banner!,
               ),
             ),
         ],
@@ -192,7 +190,7 @@ Widget biology() {
                   'https://www.youtube.com/playlist?list=PLcuHdQcnp6bGa-jpZle5g0XSndRSo5Ezx',
             ),
             ContentArguments(
-              title: 'Meosis',
+              title: 'Meiosis',
               img: AssetImage('assets/icons/biology/esperm.png'),
               pdfRoute: 'assets/pdf/Biology/meiosis.pdf',
               vidUrl:

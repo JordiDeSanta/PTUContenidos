@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:provider/provider.dart';
-import 'package:ptucontenidos/providers/ad_state.dart';
-import 'package:ptucontenidos/providers/arguments.dart';
-import 'package:ptucontenidos/utils/texts.dart';
-import 'package:ptucontenidos/widgets/theme_button.dart';
+import 'package:sciencenotes/providers/ad_state.dart';
+import 'package:sciencenotes/providers/arguments.dart';
+import 'package:sciencenotes/utils/texts.dart';
+import 'package:sciencenotes/widgets/theme_button.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class CoursePage extends StatefulWidget {
@@ -17,7 +17,7 @@ class CoursePage extends StatefulWidget {
 class _CoursePageState extends State<CoursePage> {
   final styles = TextStyles();
 
-  BannerAd banner;
+  BannerAd? banner;
 
   @override
   void didChangeDependencies() {
@@ -38,19 +38,20 @@ class _CoursePageState extends State<CoursePage> {
   @override
   Widget build(BuildContext context) {
     double h = MediaQuery.of(context).size.height;
-    final CourseArguments settings = ModalRoute.of(context).settings.arguments;
+    final settings =
+        ModalRoute.of(context)?.settings.arguments as CourseArguments;
 
     return Scaffold(
       appBar: AppBar(
         elevation: 0.0,
-        title: Text(settings.title, style: styles.getTitle(context)),
+        title: Text(settings.title!, style: styles.getTitle(context)),
         centerTitle: true,
         toolbarHeight: h * 0.1,
         backgroundColor: settings.courseColor,
         actions: [
           IconButton(
             onPressed: () {
-              _launchURL(settings.creatorLink);
+              _launchURL(settings.creatorLink!);
             },
             icon: Icon(Icons.person),
           ),
@@ -75,25 +76,25 @@ class _CoursePageState extends State<CoursePage> {
               TableRow(
                 children: [
                   ThemeButton(
-                    settings: settings.themes[0],
-                    color: settings.buttonsColor,
+                    settings: settings.themes![0],
+                    color: settings.buttonsColor!,
                   ),
                   ThemeButton(
-                    settings: settings.themes[1],
-                    color: settings.buttonsColor,
+                    settings: settings.themes![1],
+                    color: settings.buttonsColor!,
                   ),
                 ],
               ),
               TableRow(
                 children: [
                   ThemeButton(
-                    settings: settings.themes[2],
-                    color: settings.buttonsColor,
+                    settings: settings.themes![2],
+                    color: settings.buttonsColor!,
                   ),
-                  settings.themes.length == 4
+                  settings.themes?.length == 4
                       ? ThemeButton(
-                          settings: settings.themes[3],
-                          color: settings.buttonsColor,
+                          settings: settings.themes![3],
+                          color: settings.buttonsColor!,
                         )
                       : Container(),
                 ],
@@ -106,7 +107,7 @@ class _CoursePageState extends State<CoursePage> {
             Container(
               height: h * 0.1,
               child: AdWidget(
-                ad: banner,
+                ad: banner!,
               ),
             ),
         ],
