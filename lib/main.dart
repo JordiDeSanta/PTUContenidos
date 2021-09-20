@@ -37,7 +37,7 @@ class _MyAppState extends State<MyApp> {
     );
 
     return MaterialApp(
-      title: 'PTU Contenidos',
+      title: 'Science Notes',
       initialRoute: 'home',
       debugShowCheckedModeBanner: false,
       routes: {

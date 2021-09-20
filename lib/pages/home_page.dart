@@ -41,7 +41,7 @@ class _HomePageState extends State<HomePage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('PTU Contenidos', style: styles.getTitle(context)),
+        title: Text('Science Notes', style: styles.getTitle(context)),
         centerTitle: true,
         toolbarHeight: h * 0.1,
         backgroundColor: Colors.black38,
@@ -67,22 +67,7 @@ class _HomePageState extends State<HomePage> {
           physics(),
           chemistry(),
           history(),
-          fButton(
-            context,
-            styles,
-            Colors.brown[300],
-            'assets/icons/logoF.png',
-            'https://play.google.com/store/apps/details?id=com.jordidev.ptuformulas',
-            'Fórmulas',
-          ),
-          fButton(
-            context,
-            styles,
-            Colors.orange[200],
-            'assets/icons/logo.png',
-            'https://play.google.com/store/apps/details?id=com.jordidev.ptucontenidos',
-            'Dános 🌟',
-          ),
+          SizedBox(height: h * 0.3),
         ],
       ),
     );
